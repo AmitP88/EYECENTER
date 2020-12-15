@@ -7129,3 +7129,18 @@ hr {
   margin-bottom: 0;
 }
 
+.special-offers .content .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2.5fr 1fr;
+  gap: 40px 40px;
+  grid-template-areas:
+    "Box-1 Box-3"
+    "Box-2 Box-3";
+}
+
+.special-offers .content .grid-container .Box-3 { grid-area: Box-3; }
+
+.special-offers .content .grid-container .Box-1 { grid-area: Box-1; }
+
+.special-offers .content .grid-container .Box-2 { grid-area: Box-2; }
