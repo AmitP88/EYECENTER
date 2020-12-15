@@ -1,7 +1,9 @@
 <div class="special-offers">
-  <div class="title">
+  <div class="title_container">
     <span>&#x2014;&#x2014;</span>
-    <h1>{{ section.settings.title }}</h1>
+    <div class="title">
+      <span>{{ section.settings.title_1st_half }}</span><h1>{{ section.settings.title_2nd_half }}</h1>
+    </div>
   </div>
 </div>
 
@@ -10,10 +12,16 @@
     "name": "Special Offers",
     "settings": [
       {
-        "id": "title",
+        "id": "title_1st_half",
         "type": "text",
         "label": "Section Title",
-        "default": "SpecialOffers"
+        "default": "Special"
+      },
+      {
+        "id": "title_2nd_half",
+        "type": "text",
+        "label": "Section Title",
+        "default": "Offers"
       }
     ],
     "presets": [

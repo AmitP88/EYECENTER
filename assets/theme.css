@@ -7096,13 +7096,33 @@ hr {
        url("Gotham_Bold_Regular.woff") format("woff");
 }
 
-.special-offers .title {
+@font-face {
+  font-family: "Gotham Light";
+  src: url("Gotham_Light.woff2") format("woff2"),
+       url("Gotham_Light.woff") format("woff");
+}
+
+.special-offers .title_container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.special-offers .title h1 {
+.special-offers .title_container .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offers .title_container .title span {
+  font-weight: 100;
+  font-family: "Gotham Light";
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.special-offers .title_container .title h1 {
   font-family: "Gotham Bold Regular";
   font-size: 24px;
   text-transform: uppercase;
