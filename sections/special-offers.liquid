@@ -1,1 +1,27 @@
-<div class="special-offers">TEST</div>
+<div class="special-offers">
+  <div class="title">
+    <span>&#x2014;&#x2014;</span>
+    <h1>{{ section.settings.title }}</h1>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Special Offers",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Section Title",
+        "default": "Special Offers"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Special Offers",
+        "category": "Promotional"
+      }
+    ]    
+  }
+
+{% endschema %}
