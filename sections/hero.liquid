@@ -1,0 +1,487 @@
+{%- if section.settings.hero_layout == 'full_width' and section.settings.hero_size == 'adapt' -%}
+  {%- if section.settings.image.aspect_ratio == blank -%}
+    {%- assign min_aspect_ratio = 2.0 -%}
+  {%- else -%}
+    {%- assign min_aspect_ratio = section.settings.image.aspect_ratio -%}
+  {%- endif -%}
+  {%- assign wrapper_height = 100 | divided_by: min_aspect_ratio -%}
+  {%- style -%}
+    .hero-{{ section.id }} {
+      height: {{- wrapper_height -}}vw !important;
+    }
+  {%- endstyle -%}
+{%- endif -%}
+<div data-section-id="{{ section.id }}" data-section-type="hero-section">
+  {%- if section.settings.hero_layout == 'fixed_width' -%}
+    <div class="page-width">
+  {%- endif -%}
+  {%- if section.settings.hero_layout == 'fixed_width' and section.settings.hero_size ==  'adapt' -%}
+    {%- assign slide_width = 1090 -%}
+    {%- assign min_aspect_ratio = section.settings.image.aspect_ratio | default: 2.0 -%}
+    <div class="hero-fixed-width hero--adapt"
+         id="Hero-{{ section.id }}"
+         data-layout="{{ section.settings.hero_layout }}"
+         data-image-loading-animation>
+      {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+      {%- if section.settings.image.width < max_width -%}
+        {%- assign slide_width = section.settings.image.width -%}
+      {%- endif -%}
+      <div class="hero-fixed-width__content">
+        <div class="page-width text-center">
+          <div class="glasses_container">
+            <div class="glasses women">
+              <img src="{{ section.settings.title_1 | img_url: "646x109" }}" class="title" alt="{{ section.settings.title_1 }}">
+              <img src="{{ section.settings.image_1 | img_url: "600x188" }}" class="glasses_image" alt="{{ section.settings.image_1 }}">
+            </div>
+            <div class="glasses men">
+              <img src="{{ section.settings.title_2 | img_url: "336x105" }}" class="title" alt="{{ section.settings.title_2 }}">
+              <img src="{{ section.settings.image_2 | img_url: "602x194" }}" class="glasses_image" alt="{{ section.settings.image_2 }}">
+            </div>
+          </div>
+        </div>
+      </div>
+      {%- if section.settings.image != blank -%}
+        <img class="hero-fixed-width__image lazyload lazypreload"
+             data-src="{{ img_url }}"
+             data-widths="[180, 360, 470, 600, 770, 970, 1060, 1280, 1512, 1728, 2048]"
+             data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+             data-sizes="auto"
+             style="{%- if slide_width <= max_width -%}
+                      {%- assign min_width = slide_width | times: 100 | divided_by: max_width -%}
+                      min-width: {{ min_width }}%;
+                    {%- endif -%}
+                    object-position: {{ section.settings.alignment }};"
+             alt="{{ section.settings.image.alt | escape }}">
+      {%- else -%}
+        <span>
+          {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+          {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+        </span>
+      {%- endif -%}
+      <noscript>
+        <div class="hero-fixed-width__image"{% if section.settings.image %}{% unless section.settings.image.alt == blank %} role="img" aria-label="{{ section.settings.image.alt | escape }}"{% endunless %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
+      </noscript>
+    </div>
+  {%- else -%}
+    <div class="hero hero--{{ section.settings.hero_size }} hero-{{ section.id }}{% if section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %} box ratio-container lazyload js"
+         id="Hero-{{ section.id }}"
+         data-layout="{{ section.settings.hero_layout }}"
+         {%- if section.settings.image -%}
+          {% unless section.settings.image.alt == blank %}
+          role="img"
+          aria-label="{{ section.settings.image.alt | escape }}"
+          data-alt="{{ section.settings.image.alt | escape }}"
+          {% endunless %}
+         data-bg="{{ section.settings.image | img_url: '300x300' }}"
+         data-bgset="{% include 'bgset', image: section.settings.image %}"
+         data-sizes="auto"
+         data-parent-fit="cover"
+         style="background-position: {{ section.settings.alignment }};"
+         data-image-loading-animation
+         {%- endif -%}>
+      <div class="hero__inner">
+        <div class="page-width text-center">
+          <div class="glasses_container">
+            <div class="glasses women">
+              <img src="{{ section.settings.title_1 | img_url: "646x109" }}" class="title" alt="{{ section.settings.title_1 }}">
+              <img src="{{ section.settings.image_1 | img_url: "600x188" }}" class="glasses_image" alt="{{ section.settings.image_1 }}">
+              <p>{{ section.settings.text_1 }}</p>
+            </div>
+            <div class="glasses men">
+              <img src="{{ section.settings.title_2 | img_url: "336x105" }}" class="title" alt="{{ section.settings.title_2 }}">
+              <img src="{{ section.settings.image_2 | img_url: "602x194" }}" class="glasses_image" alt="{{ section.settings.image_2 }}">
+              <p>{{ section.settings.text_2 }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <noscript>
+      <div class="hero hero--{{ section.settings.hero_size }}{% if section.settings.text != blank or section.settings.button_label != blank %} hero__overlay{% endif %}"{% if section.settings.image %}{% unless section.settings.image.alt == blank %} role="img" aria-label="{{ section.settings.image.alt | escape }}"{% endunless %} style="background-image: url('{{ section.settings.image | img_url: '2048x' }}'); background-position: center {{ section.settings.alignment }};"{% endif %}></div>
+    </noscript>
+  {%- endif -%}
+  {%- if section.settings.hero_layout == 'fixed_width' -%}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": {
+    "cs": "Obrázek s textovým překryvem",
+    "da": "Billede med tekstoverlejring",
+    "de": "Foto mit überlegtem Text",
+    "en": "Image with text overlay",
+    "es": "Imagen con texto superpuesto",
+    "fi": "Kuva päällä olevalla tekstillä",
+    "fr": "Image avec calque texte",
+    "it": "Immagine con testo",
+    "ja": "テキストオーバーレイ付き画像",
+    "ko": "텍스트 오버레이 포함 이미지",
+    "nb": "Bilde med tekstoverlegg",
+    "nl": "Foto met tekstoverlay",
+    "pl": "Obraz z nakładką tekstową",
+    "pt-BR": "Imagem com texto",
+    "pt-PT": "Imagem com sobreposição de texto",
+    "sv": "Bild med textöverlagring",
+    "th": "การวางซ้อนรูปภาพพร้อมข้อความ",
+    "tr": "Metin katmanı içeren görsel",
+    "vi": "Hình ảnh có lớp phủ văn bản",
+    "zh-CN": "带文本叠加的图片",
+    "zh-TW": "附文字疊加層的圖片"
+  },
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+      "type": "select",
+      "id": "hero_layout",
+      "label": {
+        "cs": "Rozvržení",
+        "da": "Layout",
+        "de": "Layout",
+        "en": "Layout",
+        "es": "Diseño",
+        "fi": "Asettelu",
+        "fr": "Mise en page",
+        "it": "Layout",
+        "ja": "レイアウト",
+        "ko": "레이아웃",
+        "nb": "Oppsett",
+        "nl": "Opmaak",
+        "pl": "Układ",
+        "pt-BR": "Layout",
+        "pt-PT": "Esquema",
+        "sv": "Layout",
+        "th": "เลย์เอาต์",
+        "tr": "Düzen",
+        "vi": "Bố cục",
+        "zh-CN": "布局",
+        "zh-TW": "版面配置"
+      },
+      "default": "full_width",
+      "options": [
+        {
+          "label": {
+            "cs": "Plná šířka",
+            "da": "Fuld bredde",
+            "de": "Volle Breite",
+            "en": "Full width",
+            "es": "Ancho completo",
+            "fi": "Täysi leveys",
+            "fr": "Pleine largeur",
+            "it": "Intera larghezza",
+            "ja": "全幅",
+            "ko": "전체 폭",
+            "nb": "Full bredde",
+            "nl": "Volledige breedte",
+            "pl": "Pełna szerokość",
+            "pt-BR": "Largura completa",
+            "pt-PT": "Largura total",
+            "sv": "Full bredd",
+            "th": "เต็มความกว้าง",
+            "tr": "Tam genişlik",
+            "vi": "Độ rộng đầy đủ",
+            "zh-CN": "全宽",
+            "zh-TW": "全寬度"
+          },
+          "value": "full_width"
+        },
+        {
+          "label": {
+            "cs": "Pevná šířka",
+            "da": "Fast bredde",
+            "de": "Feste Breite",
+            "en": "Fixed width",
+            "es": "Ancho fijo",
+            "fi": "Kiinteä leveys",
+            "fr": "Largeur fixe",
+            "it": "Larghezza fissa",
+            "ja": "固定幅",
+            "ko": "고정 폭",
+            "nb": "Fast bredde",
+            "nl": "Vaste breedte",
+            "pl": "Stała szerokość",
+            "pt-BR": "Largura fixa",
+            "pt-PT": "Largura fixa",
+            "sv": "Fast bredd",
+            "th": "ความกว้างตายตัว",
+            "tr": "Sabit genişlik",
+            "vi": "Độ rộng cố định",
+            "zh-CN": "固定宽度",
+            "zh-TW": "固定寬度"
+          },
+          "value": "fixed_width"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "hero_size",
+      "label": {
+        "cs": "Výška sekce",
+        "da": "Højde på afsnit",
+        "de": "Bereichs-Höhe",
+        "en": "Section height",
+        "es": "Altura de la sección",
+        "fi": "Osan korkeus",
+        "fr": "Hauteur de la section",
+        "it": "Altezza sezione",
+        "ja": "セクションの高さ",
+        "ko": "섹션 높이",
+        "nb": "Høyde på del",
+        "nl": "Sectiehoogte",
+        "pl": "Wysokość sekcji",
+        "pt-BR": "Altura da seção",
+        "pt-PT": "Altura da secção",
+        "sv": "Sektionshöjd",
+        "th": "ความสูงของส่วน",
+        "tr": "Bölüm yüksekliği",
+        "vi": "Chiều cao mục",
+        "zh-CN": "分区高度",
+        "zh-TW": "區塊高度"
+      },
+      "default": "medium",
+      "options": [
+        {
+          "label": {
+            "cs": "Přizpůsobení obrázku",
+            "da": "Tilpas til billede",
+            "de": "An Bild anpassen",
+            "en": "Adapt to image",
+            "es": "Adaptar a la imagen",
+            "fi": "Sovita kuvaan",
+            "fr": "S'adapter à l'image",
+            "it": "Adatta all'immagine",
+            "ja": "画像に対応",
+            "ko": "이미지에 맞춤",
+            "nb": "Tilpass til bilde",
+            "nl": "Aanpassen aan afbeelding",
+            "pl": "Dostosuj do obrazu",
+            "pt-BR": "Adaptar à imagem",
+            "pt-PT": "Adaptar à imagem",
+            "sv": "Anpassa till bild",
+            "th": "ปรับตามรูปภาพ",
+            "tr": "Görsele uyarla",
+            "vi": "Điều chỉnh theo hình ảnh",
+            "zh-CN": "适应图片",
+            "zh-TW": "配合圖片"
+          },
+          "value": "adapt"
+        },
+        {
+          "label": {
+            "cs": "Extra malá",
+            "da": "Ekstra lille",
+            "de": "Extra klein",
+            "en": "Extra Small",
+            "es": "Extra pequeña",
+            "fi": "Erikoispieni",
+            "fr": "Très petite",
+            "it": "Molto piccola",
+            "ja": "極小",
+            "ko": "특소",
+            "nb": "Ekstra liten",
+            "nl": "Extra klein",
+            "pl": "Bardzo mała",
+            "pt-BR": "Extra pequeno",
+            "pt-PT": "Extra pequeno",
+            "sv": "Extra liten",
+            "th": "ขนาดเล็กพิเศษ",
+            "tr": "Çok Küçük",
+            "vi": "Cực nhỏ",
+            "zh-CN": "特小",
+            "zh-TW": "超小型"
+          },
+          "value": "x-small"
+        },
+        {
+          "label": {
+            "cs": "Malá",
+            "da": "Lille",
+            "de": "Klein",
+            "en": "Small",
+            "es": "Pequeña",
+            "fi": "Pieni",
+            "fr": "Petite",
+            "it": "Small",
+            "ja": "小",
+            "ko": "스몰",
+            "nb": "Liten",
+            "nl": "Klein",
+            "pl": "Mała",
+            "pt-BR": "Pequeno",
+            "pt-PT": "Pequeno",
+            "sv": "Liten",
+            "th": "เล็ก",
+            "tr": "Küçük",
+            "vi": "Nhỏ",
+            "zh-CN": "小",
+            "zh-TW": "小型"
+          },
+          "value": "small"
+        },
+        {
+          "label": {
+            "cs": "Střední",
+            "da": "Medium",
+            "de": "Mitte",
+            "en": "Medium",
+            "es": "Mediana",
+            "fi": "Keskisuuri",
+            "fr": "Moyenne",
+            "it": "Medium",
+            "ja": "中",
+            "ko": "보통",
+            "nb": "Middels",
+            "nl": "Gemiddeld",
+            "pl": "Średnia",
+            "pt-BR": "Médio",
+            "pt-PT": "Médio",
+            "sv": "Medium",
+            "th": "ปานกลาง",
+            "tr": "Orta",
+            "vi": "Trung bình",
+            "zh-CN": "中等",
+            "zh-TW": "中等"
+          },
+          "value": "medium"
+        },
+        {
+          "label": {
+            "cs": "Velká",
+            "da": "Stor",
+            "de": "Groß",
+            "en": "Large",
+            "es": "Grande",
+            "fi": "Suuri",
+            "fr": "Grande",
+            "it": "Large",
+            "ja": "大",
+            "ko": "라지",
+            "nb": "Stor",
+            "nl": "Groot",
+            "pl": "Duża",
+            "pt-BR": "Grande",
+            "pt-PT": "Grande",
+            "sv": "Stor",
+            "th": "ใหญ่",
+            "tr": "Büyük",
+            "vi": "Lớn",
+            "zh-CN": "大",
+            "zh-TW": "大型"
+          },
+          "value": "large"
+        },
+        {
+          "label": {
+            "cs": "Extra velká",
+            "da": "Ekstra stor",
+            "de": "Extra groß",
+            "en": "Extra Large",
+            "es": "Extra grande",
+            "fi": "Erikoissuuri",
+            "fr": "Très grande",
+            "it": "Molto grande",
+            "ja": "特大",
+            "ko": "특대",
+            "nb": "Ekstra stort",
+            "nl": "Extra groot",
+            "pl": "Bardzo duża",
+            "pt-BR": "Extra grande",
+            "pt-PT": "Extra grande",
+            "sv": "Extra stor",
+            "th": "ขนาดใหญ่พิเศษ",
+            "tr": "Çok Büyük",
+            "vi": "Cực lớn",
+            "zh-CN": "特大",
+            "zh-TW": "超大型"
+          },
+          "value": "x-large"
+        }
+      ]
+    },
+    {
+      "type": "image_picker",
+      "id": "title_1",
+      "label": "Title 1"
+    },    
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Text 1",
+      "default": "Diotropic | Sunglasses"
+    },
+    {
+      "type": "image_picker",
+      "id": "title_2",
+      "label": "Title 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Text 2",
+      "default": "Diotropic | Sunglasses"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Obrázek s textovým překryvem",
+        "da": "Billede med tekstoverlejring",
+        "de": "Foto mit überlegtem Text",
+        "en": "Image with text overlay",
+        "es": "Imagen con texto superpuesto",
+        "fi": "Kuva päällä olevalla tekstillä",
+        "fr": "Image avec calque texte",
+        "it": "Immagine con testo",
+        "ja": "テキストオーバーレイ付き画像",
+        "ko": "텍스트 오버레이 포함 이미지",
+        "nb": "Bilde med tekstoverlegg",
+        "nl": "Foto met tekstoverlay",
+        "pl": "Obraz z nakładką tekstową",
+        "pt-BR": "Imagem com sobreposição de texto",
+        "pt-PT": "Imagem com sobreposição de texto",
+        "sv": "Bild med textöverlagring",
+        "th": "การวางซ้อนรูปภาพพร้อมข้อความ",
+        "tr": "Metin katmanı içeren görsel",
+        "vi": "Hình ảnh có lớp phủ văn bản",
+        "zh-CN": "带文本叠加的图片",
+        "zh-TW": "附文字疊加層的圖片"
+      },
+      "category": {
+        "cs": "Obrázek",
+        "da": "Billede",
+        "de": "Foto",
+        "en": "Image",
+        "es": "Imagen",
+        "fi": "Kuva",
+        "fr": "Image",
+        "it": "Immagine",
+        "ja": "画像",
+        "ko": "이미지",
+        "nb": "Bilde",
+        "nl": "Afbeelding",
+        "pl": "Obraz",
+        "pt-BR": "Imagem",
+        "pt-PT": "Imagem",
+        "sv": "Bild",
+        "th": "รูปภาพ",
+        "tr": "Görsel",
+        "vi": "Hình ảnh",
+        "zh-CN": "图片",
+        "zh-TW": "圖片"
+      }
+    }
+  ]
+}
+{% endschema %}
