@@ -7087,3 +7087,25 @@ hr {
 
 .store-availability-list__phone {
   margin-bottom: 0; }
+
+
+/*================ Special Offers ================*/
+@font-face {
+  font-family: "Gotham Bold Regular";
+  src: url("Gotham_Bold_Regular.woff2") format("woff2"),
+       url("Gotham_Bold_Regular.woff") format("woff");
+}
+
+.special-offers .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-offers .title h1 {
+  font-family: "Gotham Bold Regular";
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
