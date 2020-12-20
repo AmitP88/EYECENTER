@@ -7129,6 +7129,13 @@ hr {
   margin-bottom: 0;
 }
 
+.special-offers .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 55px;
+  padding-right: 55PX;
+}
+
 .special-offers .content .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
