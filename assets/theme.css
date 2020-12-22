@@ -7102,10 +7102,15 @@ hr {
        url("Gotham_Light.woff") format("woff");
 }
 
+.special-offers {
+  display: flex;
+}
+
 .special-offers .title_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: rotate(-90deg);
 }
 
 .special-offers .title_container .title {
