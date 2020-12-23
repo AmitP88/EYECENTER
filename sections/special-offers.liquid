@@ -8,7 +8,9 @@
   <div class="content">
     <div class="grid-container">
       <div class="Box-3">Box 3</div>
-      <div class="Box-1">Box 1</div>
+      <div class="Box-1">
+        <img src="{{ section.settings.box_1_background_image | img_url: 'master' }}" alt="Box 1" />
+      </div>
       <div class="Box-2">Box 2</div>
     </div>
   </div>
@@ -29,6 +31,11 @@
         "type": "text",
         "label": "Section Title",
         "default": "Offers"
+      },
+      {
+        "id": "box_1_background_image",
+        "type": "image_picker",
+        "label": "Box 1 Background"
       }
     ],
     "presets": [

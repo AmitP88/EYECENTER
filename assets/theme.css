@@ -7136,9 +7136,9 @@ hr {
 
 .special-offers .content {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto;
   padding-left: 55px;
-  padding-right: 55PX;
+  padding-right: 55PX; */
 }
 
 .special-offers .content .grid-container {
@@ -7156,3 +7156,8 @@ hr {
 .special-offers .content .grid-container .Box-1 { grid-area: Box-1; }
 
 .special-offers .content .grid-container .Box-2 { grid-area: Box-2; }
+
+.special-offers .content .grid-container .Box-1 img {
+  width: 100%;
+  height: auto;
+}
