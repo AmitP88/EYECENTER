@@ -7,7 +7,9 @@
   </div>
   <div class="content">
     <div class="grid-container">
-      <div class="Box-3">Box 3</div>
+      <div class="Box-3">
+        <img src="{{ section.settings.box_3_background_image | img_url: 'master' }}" alt="Box 3" />
+      </div>
       <div class="Box-1">
         <img src="{{ section.settings.box_1_background_image | img_url: 'master' }}" alt="Box 1" />
       </div>
@@ -36,6 +38,11 @@
         "id": "box_1_background_image",
         "type": "image_picker",
         "label": "Box 1 Background"
+      },
+      {
+        "id": "box_3_background_image",
+        "type": "image_picker",
+        "label": "Box 3 Background"
       }
     ],
     "presets": [
