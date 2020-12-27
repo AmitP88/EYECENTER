@@ -7191,6 +7191,12 @@ hr {
 .cell_1, .cell_2 {
   width: 50%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell_content {
   text-align: center;
 }
 

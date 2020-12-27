@@ -16,14 +16,18 @@
       <div class="Box-2">
         <div class="shipping_container">
           <div class="cell_1">
-            <img src="{{ section.settings.shipping_icon | img_url: 'master' }}" alt="shipping icon">
-            <p class="title">{{ section.settings.shipping_title }}</p>
-            <p class="subtitle">{{ section.settings.shipping_subtitle }}</p>
+            <div class="cell_content">
+              <img src="{{ section.settings.shipping_icon | img_url: 'master' }}" alt="shipping icon">
+              <p class="title">{{ section.settings.shipping_title }}</p>
+              <p class="subtitle">{{ section.settings.shipping_subtitle }}</p>              
+            </div>
           </div>
           <div class="cell_2">
-            <img src="{{ section.settings.returns_icon | img_url: 'master' }}" alt="returns icon">
-            <p class="title">{{ section.settings.returns_title }}</p>
-            <p class="subtitle">{{ section.settings.returns_subtitle }}</p>
+            <div class="cell_content">
+              <img src="{{ section.settings.returns_icon | img_url: 'master' }}" alt="returns icon">
+              <p class="title">{{ section.settings.returns_title }}</p>
+              <p class="subtitle">{{ section.settings.returns_subtitle }}</p>              
+            </div>
           </div>
         </div>
       </div>
