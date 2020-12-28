@@ -3750,7 +3750,7 @@ hr {
   background-color: #f2ebe6 }
   @media only screen and (min-width: 750px) {
     .site-header {
-      padding: 35px 100px 0 100px;
+      padding: 35px 10% 0 10%;
       max-width: 100%;
       margin: 0 auto; }
       .site-header.logo--center {
@@ -7105,15 +7105,18 @@ hr {
        url("Gotham_Light.woff") format("woff");
 }
 
-/* .special-offers {
+.special-offers {
   display: flex;
-} */
+  justify-content: center;
+  align-items: start;
+  max-width: 1289px;
+}
 
 .special-offers .title_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* transform: rotate(-90deg); */
+  transform: rotate(-90deg);
   height: 50px;
 }
 
