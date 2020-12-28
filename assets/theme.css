@@ -1097,7 +1097,7 @@ textarea {
 /*================ #Basic Styles ================*/
 .page-width {
   *zoom: 1;
-  max-width: 1200px;
+  max-width: 1289px;
   margin: 0 auto; }
   .page-width::after {
     content: '';
@@ -2160,9 +2160,10 @@ body.prevent-scrolling {
   position: fixed;
   width: 100%; }
 
-.page-width {
+/* .page-width {
   padding-left: 55px;
-  padding-right: 55px; }
+  padding-right: 55px;
+}  */
   @media only screen and (max-width: 749px) {
     .page-width {
       padding-left: 22px;
@@ -3749,7 +3750,9 @@ hr {
   background-color: #f2ebe6 }
   @media only screen and (min-width: 750px) {
     .site-header {
-      padding: 35px 150px 0 150px; }
+      padding: 35px 100px 0 100px;
+      max-width: 100%;
+      margin: 0 auto; }
       .site-header.logo--center {
         padding-top: 30px; } }
 
@@ -7136,10 +7139,10 @@ hr {
 }
 
 .special-offers .content {
-  max-width: 1200px;
+  max-width: 1289px;
   margin: 0 auto;
-  padding-left: 55px;
-  padding-right: 55PX;
+  /* padding-left: 55px;
+  padding-right: 55PX; */
 }
 
 .special-offers .content .grid-container {
@@ -7198,6 +7201,14 @@ hr {
 
 .cell_content {
   text-align: center;
+}
+
+.cell_content .title {
+  font-family: "Gotham Bold Regular";
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a77c5a;
 }
 
 .cell_1 p, .cell_2 p {
