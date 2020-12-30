@@ -7106,7 +7106,11 @@ hr {
        url("Gotham_Light.woff") format("woff");
 }
 
-
+@font-face {
+  font-family: "MyriadPro Semibold";
+  src: url("MyriadPro_Semibold.woff2") format("woff2"),
+       url("MyriadPro_Semibold.woff") format("woff");
+}  
 
 .special-offers .title_container {
   display: flex;
@@ -7210,6 +7214,13 @@ hr {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #a77c5a;
+}
+
+.cell_content .subtitle {
+  font-family: "MyriadPro Semibold";
+  font-size: 24px;
+  text-transform: lowercase;
+  color: #b2b2b2;
 }
 
 .cell_1 p, .cell_2 p {
