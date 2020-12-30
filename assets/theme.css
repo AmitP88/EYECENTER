@@ -1097,8 +1097,8 @@ textarea {
 /*================ #Basic Styles ================*/
 .page-width {
   *zoom: 1;
-  max-width: 1289px;
-  padding: 0 5%;
+  max-width: 1200px;
+  /* padding: 0 5%; */
   margin: 0 auto; }
   .page-width::after {
     content: '';
@@ -7106,12 +7106,7 @@ hr {
        url("Gotham_Light.woff") format("woff");
 }
 
-.special-offers {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  max-width: 1289px;
-}
+
 
 .special-offers .title_container {
   display: flex;
@@ -7119,6 +7114,7 @@ hr {
   align-items: center;
   transform: rotate(-90deg);
   height: 50px;
+  width: 200px;
 }
 
 .special-offers .title_container .title {
@@ -7143,7 +7139,7 @@ hr {
 }
 
 .special-offers .content {
-  max-width: 1289px;
+  max-width: 1289px; /* 1289px on viewport width 1600px */
   margin: 0 auto;
   /* padding-left: 55px;
   padding-right: 55PX; */
@@ -7157,6 +7153,7 @@ hr {
   grid-template-areas:
     "Box-1 Box-3"
     "Box-2 Box-3";
+  width: 1289px;
 }
 
 .Box-3 { 
