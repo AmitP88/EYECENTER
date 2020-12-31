@@ -7169,7 +7169,7 @@ hr {
   grid-template-areas:
     "Box-1 Box-3"
     "Box-2 Box-3";
-  width: 1289px;
+  max-width: 1289px;
 }
 
 .Box-3 { 
