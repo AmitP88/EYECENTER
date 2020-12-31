@@ -7112,19 +7112,31 @@ hr {
        url("MyriadPro_Semibold.woff") format("woff");
 }  
 
+.special-offers {
+  width: fit-content;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
 .special-offers .title_container {
   display: flex;
-  justify-content: center;
   align-items: center;
   transform: rotate(-90deg);
   height: 50px;
-  width: 200px;
+  width: 150px;
 }
 
 .special-offers .title_container .title {
   display: flex;
-  justify-content: center;
   align-items: center;
+}
+
+.special-offers .title_container .title .dash {
+  padding-right: 30px;
+  width: 30px;
+  color: #bcbcbc;
 }
 
 .special-offers .title_container .title span {
