@@ -7117,7 +7117,7 @@ hr {
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  align-items: center;
+  padding-right: 10%;
 }
 
 .special-offers .title_container {
@@ -7126,11 +7126,13 @@ hr {
   transform: rotate(-90deg);
   height: 50px;
   width: 150px;
+  margin-top: 10%;
 }
 
 .special-offers .title_container .title {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .special-offers .title_container .title .dash {
