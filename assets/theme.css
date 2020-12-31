@@ -1308,6 +1308,11 @@ h6,
   max-width: 100%;
 }
 
+.glasses_image {
+  margin-top: -3%;
+  width: 97%;
+}
+
 
 .mega-title,
 .mega-subtitle {
