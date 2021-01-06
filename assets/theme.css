@@ -7199,8 +7199,19 @@ hr {
   z-index: 2;
   top: 5px;
   max-width: 306px;
-  max-height: 109px; 
   text-align: center; 
+}
+
+.label-content a > button {
+  width: 306px;
+  height: 79px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .box-label {
