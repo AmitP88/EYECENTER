@@ -7279,13 +7279,14 @@ hr {
 .Box-1 img {
   width: 100%;
   height: auto;
-  opacity: 0.9;
+  opacity: 0.8;
   margin-bottom: -6px;
 }
 
 .Box-3 img {
   width: 100%;
-  height: 100%;  opacity: 0.9;
+  height: 100%;
+  opacity: 0.9;
   margin-bottom: -6px;
 }
 
