@@ -7192,14 +7192,21 @@ hr {
   grid-area: Box-1;
   height: min-content;
   background-color: black;
+  position: relative;
 }
 
 .label-content {
-  position: absolute;
+  /* position: absolute;
   z-index: 2;
   top: 5px;
   max-width: 306px;
-  text-align: center; 
+  text-align: center;  */
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: absolute;
+  top: 55%;
+  right: 5%;
 }
 
 .label-content a > button {
@@ -7215,6 +7222,7 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 .gg-chevron-right {
@@ -7249,6 +7257,7 @@ hr {
   color: white;
   max-height: 109px;
   line-height: normal;
+  padding: 0 20px;
 }
 
 .Box-2 {
