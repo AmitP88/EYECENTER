@@ -7186,6 +7186,19 @@ hr {
   grid-area: Box-3;
   height: 100%;
   background-color: black;
+  position: relative;
+}
+
+.Box-3 > .label-content {
+  position: absolute;
+  top: 70%;
+  width: 100%;
+}
+
+.Box-3 > .label-content > .box-label {
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 5%;
 }
 
 .Box-1 {
@@ -7195,18 +7208,16 @@ hr {
   position: relative;
 }
 
-.label-content {
-  /* position: absolute;
-  z-index: 2;
-  top: 5px;
-  max-width: 306px;
-  text-align: center;  */
-  width: 50%;
-  height: 100%;
-  float: right;
+.Box-1 > .label-content {
   position: absolute;
   top: 55%;
   right: 5%;
+}
+
+.label-content {
+  width: 50%;
+  height: 100%;
+  float: right;
 }
 
 .label-content a > button {

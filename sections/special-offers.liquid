@@ -10,6 +10,12 @@
     <div class="grid-container">
       <div class="Box-3">
         <img src="{{ section.settings.box_3_background_image | img_url: 'master' }}" alt="Box 3" />
+        <div class="label-content">
+          <p class="box-label">{{ section.settings.box_1_label }}</p>
+          <a href="#">
+            <button>{{ section.settings.box_1_button_text }}<i class="gg-chevron-right"></i></button>            
+          </a>
+        </div>
       </div>
       <div class="Box-1">
         <img src="{{ section.settings.box_1_background_image | img_url: 'master' }}" alt="Box 1" />
