@@ -1302,11 +1302,7 @@ h6,
   letter-spacing: 2px;
 }
 
-.glasses .title {
-  margin: 0 auto;
-  height: auto;
-  max-width: 100%;
-}
+
 
 .glasses_image {
   margin-top: -3%;
@@ -7117,31 +7113,9 @@ hr {
        url("MyriadPro_Semibold.woff") format("woff");
 }  
 
-.special-offers {
-  width: fit-content;
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  padding-right: 8%;
-  position: relative;
-  z-index: 2;
-  margin-top: -10%;
-}
 
-.special-offers .title_container {
-  display: flex;
-  align-items: center;
-  transform: rotate(-90deg);
-  height: 50px;
-  width: 150px;
-  margin-top: 10%;
-}
 
-.special-offers .title_container .title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .special-offers .title_container .title .dash {
   padding-right: 30px;
@@ -7171,15 +7145,10 @@ hr {
   padding-right: 55PX; */
 }
 
-.special-offers .content .grid-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  /* grid-template-rows: 2.5fr 1fr; */
-  gap: 40px 40px;
-  grid-template-areas:
-    "Box-1 Box-3"
-    "Box-2 Box-3";
-  max-width: 1289px;
+.special-offers .title_container .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Box-3 { 
@@ -7189,17 +7158,7 @@ hr {
   position: relative;
 }
 
-.Box-3 > .label-content {
-  position: absolute;
-  top: 70%;
-  width: 100%;
-}
 
-.Box-3 > .label-content > .box-label {
-  width: 75%;
-  margin: 0 auto;
-  margin-bottom: 5%;
-}
 
 .Box-1 {
   grid-area: Box-1;
@@ -7208,33 +7167,9 @@ hr {
   position: relative;
 }
 
-.Box-1 > .label-content {
-  position: absolute;
-  top: 55%;
-  right: 5%;
-}
 
-.label-content {
-  width: 50%;
-  height: 100%;
-  float: right;
-}
 
-.label-content a > button {
-  width: 306px;
-  height: 79px;
-  border: 1px solid white;
-  background-color: transparent;
-  color: white;
-  font-family: "Gotham Bold Regular";
-  font-size: 18px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
+
 
 .gg-chevron-right {
   box-sizing: border-box;
@@ -7290,35 +7225,27 @@ hr {
   margin-bottom: -6px;
 }
 
+.label-content a > button {
+  width: 306px;
+  height: 79px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .shipping_container {
   width: 100%;
   height: 250px;
   border: 0.5px solid #a77c5a;
   display: flex;
-}
-
-.cell_1 {
-  position: relative;
-}
-
-.cell_1::after {
-  /* border-right: 0.5px solid #a77c5a; */
-  content: "";
-  background: #a77c5a;
-  position: absolute;
-  top: 10%;
-  bottom: 10%;
-  right: 0;
-  height: 180px;
-  width: 0.5px;
-}
-
-.cell_1, .cell_2 {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .cell_content {
@@ -7405,7 +7332,9 @@ hr {
     width: 100%;
     height: fit-content;
     display: block;
+    border: 0.5px solid #a77c5a; 
   }
+
 
   .cell_1, .cell_2 {
     width: 100%;
@@ -7421,5 +7350,137 @@ hr {
     border: none;
     background: none;
   }
+
+}
+
+@media only screen and (min-width: 375px) {
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .glasses .title {
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .special-offers {
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding-right: 8%;
+    position: relative;
+    z-index: 2;
+    margin-top: -10%;
+    padding: 0;
+  }
+
+  .special-offers .content {
+    padding-right: 10%;
+  }
+
+  .special-offers .title_container {
+    display: flex;
+    align-items: center;
+    transform: rotate(-90deg);
+    height: 50px;
+    width: 150px;
+    margin-top: 10%;
+  }
+  
+  .special-offers .content .grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* grid-template-rows: 2.5fr 1fr; */
+    gap: 40px 40px;
+    grid-template-areas:
+      "Box-1 Box-3"
+      "Box-2 Box-3";
+    max-width: 1289px;
+  }
+
+  
+  .cell_1 {
+    position: relative;
+    border-bottom: none;
+  }
+
+  .cell_1::after {
+    border-right: 0.5px solid #a77c5a;
+    content: "";
+    background: #a77c5a;
+    position: absolute;
+    top: 10%;
+    bottom: 10%;
+    right: 0;
+    height: 180px;
+    width: 0.5px;
+  }
+  
+  .cell_1, .cell_2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 55%;
+    right: 5%;
+    margin: 0 auto;
+    width: 306px;
+  }
+
+  .box-label {
+    padding: 0;
+  }
+  
+  .label-content {
+    width: 50%;
+    height: 100%;
+    float: right;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+  }
+  
+  .Box-3 > .label-content > .box-label {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+  }
+
 
 }
