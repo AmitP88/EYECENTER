@@ -7271,6 +7271,8 @@ hr {
   margin: 0;
 }
 
+
+
 @media only screen and (min-width: 320px) {
   /* Hero section */
   .glasses .title {
@@ -7330,7 +7332,6 @@ hr {
 
   .shipping_container {
     width: 100%;
-    height: fit-content;
     display: block;
     border: 0.5px solid #a77c5a; 
   }
@@ -7360,6 +7361,12 @@ hr {
     right: 0%;
     margin: 0 auto;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .shipping_container {
+    height: fit-content;
   }
 }
 
@@ -7426,6 +7433,9 @@ hr {
     max-width: 1289px;
   }
 
+  .shipping_container {
+    display: flex;
+  }
   
   .cell_1 {
     position: relative;
@@ -7452,6 +7462,10 @@ hr {
     align-items: center;
   }
 
+  .cell_content .title {
+    width: max-content;
+  }
+
   .Box-1 > .label-content {
     position: absolute;
     top: 55%;
@@ -7472,7 +7486,7 @@ hr {
 
   .Box-3 > .label-content {
     position: absolute;
-    top: 70%;
+    top: 65%;
     width: 100%;
   }
   
@@ -7482,5 +7496,8 @@ hr {
     margin-bottom: 5%;
   }
 
+  .label-content a > button {
+    width: 306px;
+  }
 
 }
