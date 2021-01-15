@@ -7117,13 +7117,13 @@ hr {
 
 
 
-.special-offers .title_container .title .dash {
+.title_container .title .dash {
   padding-right: 30px;
   width: 30px;
   color: #bcbcbc;
 }
 
-.special-offers .title_container .title span {
+.title_container .title span {
   font-weight: 100;
   font-family: "Gotham Light";
   font-size: 24px;
@@ -7131,7 +7131,7 @@ hr {
   margin-bottom: 0;
 }
 
-.special-offers .title_container .title h1 {
+.title_container .title h1 {
   font-family: "Gotham Bold Regular";
   font-size: 24px;
   text-transform: uppercase;
@@ -7145,7 +7145,7 @@ hr {
   padding-right: 55PX; */
 }
 
-.special-offers .title_container .title {
+.title_container .title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7287,7 +7287,7 @@ hr {
     padding: 5%;
   }
 
-  .special-offers .title_container {
+  .title_container {
     display: flex;
     align-items: center;
     transform: rotate(0deg);
@@ -7459,7 +7459,7 @@ hr {
     padding-right: 10%;
   }
 
-  .special-offers .title_container {
+  .title_container {
     display: flex;
     align-items: center;
     transform: rotate(-90deg);
@@ -7545,6 +7545,16 @@ hr {
 
   .label-content a > button {
     width: 306px;
+  }
+
+  .collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid--view-items {
+    padding-right: 10%;
   }
 
 }
