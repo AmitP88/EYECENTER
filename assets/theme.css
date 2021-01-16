@@ -7292,6 +7292,7 @@ hr {
   font-family: "Gotham Bold Regular";
   font-size: 18px;
   text-transform: uppercase;
+  padding-left: 50px;
 }
 
 .load_more a .gg-chevron-right {
