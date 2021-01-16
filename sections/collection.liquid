@@ -58,11 +58,13 @@
 
   {% if section.settings.show_view_all %}
     <hr class="hr--invisible" aria-hidden="true" />
-    <div class="text-center">
+    <div class="load_more">
       <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
-        {{ 'collections.general.view_all' | t }}
-      </a>
+        Load More
+        <i class="gg-chevron-right"></i>
+      </a>     
     </div>
+
   {% endif %}  
 
 {% schema %}
@@ -228,7 +230,7 @@
         "cs": "Zobrazit tlačítko Zobrazit vše",
         "da": "Vis knappen \"Se flere\"",
         "de": "'Alle anzeigen' Button anzeigen",
-        "en": "Show 'View all' button",
+        "en": "Show 'Load More' button",
         "es": "Mostrar el botón 'Ver todo'",
         "fi": "Näytä \"Näytä kaikki\" -painike",
         "fr": "Afficher le bouton “Tout voir”",

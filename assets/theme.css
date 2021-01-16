@@ -7272,6 +7272,38 @@ hr {
 }
 
 
+/* Collections */
+.load_more {
+  width: 306px;
+  height: 79px;
+  margin: 0 auto;
+  border: 0.5px solid #b2b2b2;
+  background-color: transparent;
+}
+
+.load_more a {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: black;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.load_more a .gg-chevron-right {
+  padding-left: 60px;
+}
+
+.load_more .btn:not([disabled]):hover {
+  background-color: transparent;
+  color: black;
+}
+
+
 
 @media only screen and (min-width: 320px) {
   /* Hero section */
