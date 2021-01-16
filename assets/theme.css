@@ -7424,7 +7424,7 @@ hr {
 
 @media only screen and (min-width: 768px) {
   .special-offers {
-    margin-top: -30%;
+    margin-top: -22%;
   }
 
   .special-offers .content .grid-container {
@@ -7483,7 +7483,7 @@ hr {
     padding-right: 8%;
     position: relative;
     z-index: 2;
-    margin-top: -10%;
+    margin-top: -11%;
     padding: 0;
   }
 
