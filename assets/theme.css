@@ -6580,10 +6580,10 @@ hr {
 
 .product-card {
   position: relative; }
-  .product-card:hover .product-card__image-wrapper, .product-card:focus-within .product-card__image-wrapper {
+  /* .product-card:hover .product-card__image-wrapper, .product-card:focus-within .product-card__image-wrapper {
     opacity: 0.8; }
   .product-card:hover .product-card__title, .product-card:focus-within .product-card__title {
-    border-bottom-color: var(--color-text); }
+    border-bottom-color: var(--color-text); } */
 
 .product-card__image-with-placeholder-wrapper {
   position: relative; }
