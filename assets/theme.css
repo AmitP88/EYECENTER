@@ -5336,7 +5336,14 @@ hr {
   flex-direction: column;
   align-items: flex-start;
   margin-top: 0;
-  margin-bottom: 0; }
+  margin-bottom: 0; 
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Gotham Bold Regular";
+  font-size: 27px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
   @media only screen and (max-width: 749px) {
     .price {
       font-size: calc(((var(--font-size-base) - 1) / (var(--font-size-base))) * 1em); } }
@@ -6559,11 +6566,20 @@ hr {
   position: relative; }
 
 .product-card__title {
-  border-bottom: 1px solid transparent;
+  /* border-bottom: 1px solid transparent;
   display: inline;
   font-family: var(--font-stack-header);
   font-style: var(--font-style-header);
-  font-weight: var(--font-weight-header); }
+  font-weight: var(--font-weight-header);  */
+  font-family: "Gotham Medium Regular";
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #a77c5a;
+}
 
 [data-section-type="video-section"] {
   margin: 0 auto; }
@@ -7100,6 +7116,7 @@ hr {
   src: url("Gotham_Bold_Regular.woff2") format("woff2"),
        url("Gotham_Bold_Regular.woff") format("woff");
 }
+
 
 @font-face {
   font-family: "Gotham Light";
