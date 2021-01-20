@@ -66,15 +66,6 @@
     <dt>
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.sale_price' | t }}</span>
     </dt>
-    <dd>
-      <span class="price-item price-item--sale">
-        {%- if product.price_varies -%}
-          {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
-        {%- else -%}
-          {{ money_price }}
-        {%- endif -%}
-      </span>
-    </dd>
     <div class="price__compare">
       <dt>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.regular_price' | t }}</span>
@@ -85,6 +76,15 @@
         </s>
       </dd>
     </div>
+    <dd>
+      <span class="price-item price-item--sale">
+        {%- if product.price_varies -%}
+          {{ 'products.product.from_lowest_price_html' | t: lowest_price: money_price }}
+        {%- else -%}
+          {{ money_price }}
+        {%- endif -%}
+      </span>
+    </dd>
   </div>
   <div class="price__unit">
     <dt>

@@ -5344,6 +5344,27 @@ hr {
   padding-top: 10px;
   padding-left: 20px;
 }
+
+.price__badges {
+  display: none;
+}
+
+.price--on-sale .price-item--regular {
+  text-decoration: none !important;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  color: #b2b2b2;
+}
+
+.price__compare {
+  margin: 0 auto;
+}
+
+.price-item--sale {
+  color: black !important;
+  margin: 0 auto !important;
+}
+
   @media only screen and (max-width: 749px) {
     .price {
       font-size: calc(((var(--font-size-base) - 1) / (var(--font-size-base))) * 1em); } }
@@ -5390,7 +5411,9 @@ hr {
   .price--on-sale .price__sale {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
 .price__vendor {
   color: var(--color-body-text);
