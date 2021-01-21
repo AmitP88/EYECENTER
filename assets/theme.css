@@ -6087,8 +6087,10 @@ hr {
 .logo-bar__item {
   display: inline-block;
   vertical-align: middle;
-  max-width: 160px;
-  margin: 0 27.5px 35px; }
+  border: 1px solid #aaaaaa;
+  width: 270px;
+  height: 270px;
+}
 
 @media only screen and (min-width: 750px) {
   .logo-bar__item--large {
