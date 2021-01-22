@@ -6087,6 +6087,7 @@ hr {
 
   .logo-bar__item {
     display: flex;
+    align-items: center;
     border: 1px solid #aaaaaa;
     width: 270px;
     height: 270px;
@@ -6107,8 +6108,8 @@ hr {
   }
 
   .logo-bar__item {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     border: 1px solid #aaaaaa;
     width: 270px;
     height: 270px;

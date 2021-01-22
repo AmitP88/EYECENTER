@@ -1,7 +1,13 @@
 <div class="page-width">
   {% if section.settings.title != blank %}
     <div class="section-header text-center">
-      <h2>{{ section.settings.title | escape }}</h2>
+      <div class="title_container">
+        <div class="title">
+          <span class="dash">&mdash;</span>
+          <span>{{ section.settings.title_1st_half }}</span>
+          <h1>{{ section.settings.title_2nd_half }}</h1>
+        </div>
+      </div>
     </div>
   {% endif %}
 
@@ -61,54 +67,16 @@
   "max_blocks": 20,
   "settings": [
     {
+      "id": "title_1st_half",
       "type": "text",
-      "id": "title",
-      "label": {
-        "cs": "Nadpis",
-        "da": "Overskrift",
-        "de": "Titel",
-        "en": "Heading",
-        "es": "Título",
-        "fi": "Otsake",
-        "fr": "En-tête",
-        "it": "Heading",
-        "ja": "見出し",
-        "ko": "제목",
-        "nb": "Overskrift",
-        "nl": "Kop",
-        "pl": "Nagłówek",
-        "pt-BR": "Título",
-        "pt-PT": "Título",
-        "sv": "Rubrik",
-        "th": "ส่วนหัว",
-        "tr": "Başlık",
-        "vi": "Tiêu đề",
-        "zh-CN": "标题",
-        "zh-TW": "標題"
-      },
-      "default": {
-        "cs": "Seznam log",
-        "da": "Logoliste",
-        "de": "Logo-Liste",
-        "en": "Logo list",
-        "es": "Lista de logos",
-        "fi": "Logoluettelo",
-        "fr": "Liste de logos",
-        "it": "Elenco loghi",
-        "ja": "ロゴリスト",
-        "ko": "로고 목록",
-        "nb": "Logoliste",
-        "nl": "Logolijst",
-        "pl": "Lista logo",
-        "pt-BR": "Lista de logotipos",
-        "pt-PT": "Lista de logótipos",
-        "sv": "Logotyplista",
-        "th": "รายการโลโก้",
-        "tr": "Logo listesi",
-        "vi": "Danh sách logo",
-        "zh-CN": "logo 列表",
-        "zh-TW": "標誌清單"
-      }
+      "label": "Section Title",
+      "default": "Bra"
+    },
+    {
+      "id": "title_2nd_half",
+      "type": "text",
+      "label": "Section Title",
+      "default": "ndS"
     }
   ],
   "blocks": [
