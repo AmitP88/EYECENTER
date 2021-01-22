@@ -6080,17 +6080,44 @@ hr {
   text-align: center;
   margin-bottom: -35px; }
 
+@media only screen and (min-width: 320px) {
+  .logo-bar {
+    display: block;
+  }
+
+  .logo-bar__item {
+    display: flex;
+    border: 1px solid #aaaaaa;
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    margin-bottom: 15%;
+  }
+
+}
+
 @media only screen and (min-width: 750px) {
   .logo-bar--large {
-    margin-bottom: -55px; } }
+    margin-bottom: -55px; 
+  } 
 
-.logo-bar__item {
-  display: inline-block;
-  vertical-align: middle;
-  border: 1px solid #aaaaaa;
-  width: 270px;
-  height: 270px;
+  .logo-bar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo-bar__item {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #aaaaaa;
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+  }  
+  
 }
+
+
 
 @media only screen and (min-width: 750px) {
   .logo-bar__item--large {
