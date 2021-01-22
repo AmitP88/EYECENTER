@@ -6126,8 +6126,8 @@ hr {
   background-color: #e5e5e5;
 }
 
-.logo-bar-container > .title_container {
-  margin-top: -160%;
+.logo-bar-container > .section-header > .title_container {
+  margin-top: -175%;
 }
 
 .logo_product_quantity {
