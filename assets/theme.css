@@ -6130,6 +6130,15 @@ hr {
   margin-top: -160%;
 }
 
+.logo_product_quantity {
+  text-transform: uppercase;
+  font-family: "Gotham Medium Regular";
+  font-size: 18px;
+  color: #a77c5a;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
 @media only screen and (min-width: 750px) {
   .logo-bar__item--large {
     margin-bottom: 55px; } }

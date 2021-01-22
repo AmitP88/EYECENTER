@@ -12,19 +12,24 @@
   {% if section.blocks.size > 0 %}
     <ul class="logo-bar{% if section.settings.title_enable %} logo-bar--large{% endif %}">
       {% for block in section.blocks %}
-        <li class="logo-bar__item{% if section.settings.title_enable %} logo-bar__item--large{% endif %}" {{ block.shopify_attributes }}>
-          {% if block.settings.link != blank %}
-            <a href="{{ block.settings.link }}" class="logo-bar__link">
+        <div class="logo_item_container">
+          <li class="logo-bar__item{% if section.settings.title_enable %} logo-bar__item--large{% endif %}" {{ block.shopify_attributes }}>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="logo-bar__link">
+            {% endif %}
+            {% if block.settings.image != blank %}
+              {{ block.settings.image | img_url: '160x160', scale: 2 | img_tag: block.settings.image.alt, 'logo-bar__image' }}
+            {% else %}
+              {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+            {% endif %}
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </li>
+          {% if block.settings.logo_product_quantity != blank %}
+            <p class="logo_product_quantity">{{ block.settings.logo_product_quantity }} Products</p>
           {% endif %}
-          {% if block.settings.image != blank %}
-            {{ block.settings.image | img_url: '160x160', scale: 2 | img_tag: block.settings.image.alt, 'logo-bar__image' }}
-          {% else %}
-            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
-          {% endif %}
-          {% if block.settings.link != blank %}
-            </a>
-          {% endif %}
-        </li>
+        </div>
       {% endfor %}
     </ul>
   {% endif %}
@@ -180,6 +185,11 @@
             "zh-CN": "可选",
             "zh-TW": "(選填)"
           }
+        },
+        {
+          "id": "logo_product_quantity",
+          "type": "text",
+          "label": "Logo Product Quantity"
         }
       ]
     }
