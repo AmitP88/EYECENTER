@@ -2575,6 +2575,14 @@ hr {
   .index-section--slideshow + .index-section--flush {
     margin-top: 0.4rem; } }
 
+.featured_columns_image_container {
+  background-color: black;
+}
+
+.featured_columns_image_container > img {
+  opacity: 0.9;
+}
+
 .placeholder-svg {
   display: block;
   fill: var(--color-blankstate);
