@@ -6635,10 +6635,18 @@ hr {
   text-align: right; }
 
 .newsletter-section {
-  padding-top: 55px; }
+  padding-top: 55px;
+  display: flex;
+  width: 100%;
+}
 
-.index-section--newsletter-background {
-  background-color: var(--color-bg-alt); }
+.newsletter-section > .section_content {
+  width: 100%;
+  padding-right: 10%;
+}
+
+/* .index-section--newsletter-background {
+  background-color: var(--color-bg-alt); } */
 
 .rich-text__heading--large {
   font-size: 1.4em; }

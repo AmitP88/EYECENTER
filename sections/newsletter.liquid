@@ -1,5 +1,12 @@
 <div class="newsletter-section{% if section.settings.show_background %} index-section--newsletter-background{% endif %}">
-  <div class="page-width">
+  <div class="title_container">
+    <div class="title">
+      <span class="dash">&mdash;</span>
+      <span>{{ section.settings.title_1st_half }}</span>
+      <h1>{{ section.settings.title_2nd_half }}</h1>
+    </div>
+  </div>
+  <div class="section_content">
     <div class="section-header text-center">
       {% if section.settings.section_title != blank %}
         <h2 class="h2">{{ section.settings.section_title | escape }}</h2>
@@ -46,7 +53,7 @@
           <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
         </span>
       {%- endif -%}
-    {% endform %}
+    {% endform %}    
   </div>
 </div>
 
@@ -80,54 +87,16 @@
   "class": "index-section index-section--flush",
   "settings": [
     {
+      "id": "title_1st_half",
       "type": "text",
-      "id": "section_title",
-      "label": {
-        "cs": "Nadpis",
-        "da": "Overskrift",
-        "de": "Titel",
-        "en": "Heading",
-        "es": "Título",
-        "fi": "Otsake",
-        "fr": "En-tête",
-        "it": "Heading",
-        "ja": "見出し",
-        "ko": "제목",
-        "nb": "Overskrift",
-        "nl": "Kop",
-        "pl": "Nagłówek",
-        "pt-BR": "Título",
-        "pt-PT": "Título",
-        "sv": "Rubrik",
-        "th": "ส่วนหัว",
-        "tr": "Başlık",
-        "vi": "Tiêu đề",
-        "zh-CN": "标题",
-        "zh-TW": "標題"
-      },
-      "default": {
-        "cs": "Přihlaste se k odběru novinek",
-        "da": "Tilmeld dig vores nyhedsbrev",
-        "de": "Unseren Newsletter abonnieren",
-        "en": "Subscribe to our newsletter",
-        "es": "Suscríbete a nuestro boletín de noticias",
-        "fi": "Tilaa uutiskirjeemme",
-        "fr": "S'inscrire à la newsletter",
-        "it": "Iscriviti alla nostra newsletter",
-        "ja": "ストアからのお知らせを受け取る",
-        "ko": "뉴스 레터 구독",
-        "nb": "Abonner på nyhetsbrevet vårt",
-        "nl": "Abonneren op onze nieuwsbrief",
-        "pl": "Zapisz się do naszego newslettera",
-        "pt-BR": "Assine a nossa newsletter",
-        "pt-PT": "Subscreva a nossa newsletter",
-        "sv": "Prenumerera på vårt nyhetsbrev",
-        "th": "สมัครรับจดหมายข่าวของเรา",
-        "tr": "Bültenimize abone olun",
-        "vi": "Đăng ký nhận bản tin",
-        "zh-CN": "订阅我们的新闻通讯",
-        "zh-TW": "訂閱我們的電子報"
-      }
+      "label": "Section Title",
+      "default": "News"
+    },
+    {
+      "id": "title_2nd_half",
+      "type": "text",
+      "label": "Section Title",
+      "default": "Letter"
     },
     {
       "type": "richtext",
