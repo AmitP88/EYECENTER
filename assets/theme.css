@@ -274,6 +274,31 @@
        url("Gotham_Medium_Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Gotham Bold Regular";
+  src: url("Gotham_Bold_Regular.woff2") format("woff2"),
+       url("Gotham_Bold_Regular.woff") format("woff");
+}
+
+
+@font-face {
+  font-family: "Gotham Light";
+  src: url("Gotham_Light.woff2") format("woff2"),
+       url("Gotham_Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gotham Book Regular";
+  src: url("Gotham_Book_Regular.woff2") format("woff2"),
+       url("Gotham_Book_Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "MyriadPro Semibold";
+  src: url("MyriadPro_Semibold.woff2") format("woff2"),
+       url("MyriadPro_Semibold.woff") format("woff");
+}  
+
 article,
 aside,
 details,
@@ -6645,6 +6670,14 @@ hr {
   padding-right: 10%;
 }
 
+.newsletter-section > .section_content > .section-header > .rte > p {
+  width: 675px;
+  margin: 0 auto;
+  font-family: "Gotham Book Regular";
+  font-size: 24px;
+  color: #a77c5a;
+}
+
 /* .index-section--newsletter-background {
   background-color: var(--color-bg-alt); } */
 
@@ -7216,29 +7249,6 @@ hr {
 
 
 /*================ Special Offers ================*/
-@font-face {
-  font-family: "Gotham Bold Regular";
-  src: url("Gotham_Bold_Regular.woff2") format("woff2"),
-       url("Gotham_Bold_Regular.woff") format("woff");
-}
-
-
-@font-face {
-  font-family: "Gotham Light";
-  src: url("Gotham_Light.woff2") format("woff2"),
-       url("Gotham_Light.woff") format("woff");
-}
-
-@font-face {
-  font-family: "MyriadPro Semibold";
-  src: url("MyriadPro_Semibold.woff2") format("woff2"),
-       url("MyriadPro_Semibold.woff") format("woff");
-}  
-
-
-
-
-
 .title_container .title .dash {
   padding-right: 30px;
   width: 30px;
