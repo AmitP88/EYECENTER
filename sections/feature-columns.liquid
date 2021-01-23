@@ -37,6 +37,9 @@
                       data-aspectratio="{{ block.settings.image.aspect_ratio }}"
                       data-sizes="auto"
                       alt="{{ block.settings.image.alt | escape }}">
+                  <div class="label-content">
+                    <p class="box-label">{{ block.settings.box_label }}</p>                    
+                  </div>
                 </div>
               </div>
               <noscript>
@@ -188,6 +191,13 @@
             "vi": "Hình ảnh",
             "zh-CN": "图片",
             "zh-TW": "圖片"
+          }
+        },
+        {
+          "type": "text",
+          "id": "box_label",
+          "label": {
+            "en": "Box Label"
           }
         },
         {
