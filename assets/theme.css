@@ -6665,6 +6665,10 @@ hr {
   width: 100%;
 }
 
+.newsletter-section > .title_container {
+  margin-top: 5%;
+}
+
 .newsletter-section > .section_content {
   width: 100%;
   padding-right: 10%;
