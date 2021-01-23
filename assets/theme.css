@@ -6671,10 +6671,10 @@ hr {
 }
 
 .newsletter-section > .section_content > .section-header > .rte > p {
-  width: 675px;
+  width: 620px;
   margin: 0 auto;
-  font-family: "Gotham Book Regular";
-  font-size: 24px;
+  /* font-family: "Gotham Book Regular"; */
+  font-size: 25px;
   color: #a77c5a;
 }
 
