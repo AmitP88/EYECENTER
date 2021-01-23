@@ -2215,7 +2215,9 @@ hr {
 
 .grid--flush-bottom {
   margin-bottom: -55px;
-  overflow: auto; }
+  overflow: auto;
+  padding: 0 5%;
+}
   .grid--flush-bottom > .grid__item {
     margin-bottom: 55px; }
 
