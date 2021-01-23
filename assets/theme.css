@@ -1924,20 +1924,32 @@ select::-ms-expand, .disclosure__toggle::-ms-expand {
   clip: rect(1px, 1px, 1px, 1px); }
 
 ::-webkit-input-placeholder {
-  color: var(--color-text-field-text);
-  opacity: 0.6; }
+  color: black;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
 ::-moz-placeholder {
-  color: var(--color-text-field-text);
-  opacity: 0.6; }
+  color: black;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
 :-ms-input-placeholder {
-  color: var(--color-text-field-text);
-  opacity: 0.6; }
+  color: black;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
 ::-ms-input-placeholder {
-  color: var(--color-text-field-text);
-  opacity: 1; }
+  color: black;
+  font-family: "Gotham Bold Regular";
+  font-size: 18px;
+  text-transform: uppercase;
+}
 
 /*================ Labels ================*/
 .label--error {
@@ -1949,7 +1961,7 @@ textarea {
   @media only screen and (min-width: 750px) {
     input,
     textarea {
-      padding: 10px 18px; } }
+      padding: 30px 38px; } }
 
 /*================ Vertical forms ================*/
 .form-vertical input,
@@ -2067,8 +2079,9 @@ textarea {
   flex-basis: 15rem;
   flex-grow: 9999;
   margin-bottom: 1rem;
-  border-radius: 2px 0 0 2px;
-  text-align: left; }
+  border-radius: 0;
+  text-align: left;
+  border-color: #d3bdac; }
   .input-group__field input {
     width: 100%; }
   .form-vertical .input-group__field {
