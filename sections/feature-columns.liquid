@@ -20,7 +20,7 @@
       {% else %}
         {%- assign column_width = grid_item_width -%}
       {% endif %}
-      <div class="grid__item {{ column_width }} text-{{ section.settings.align_text }}" {{ block.shopify_attributes }}>
+      <div class="grid__item {{ column_width }}" {{ block.shopify_attributes }}>
         {% if block.settings.enable_image %}
           {% if block.settings.image != blank %}
             {% capture img_id %}TextColumnImage-{{ block.id }}{% endcapture %}
@@ -105,90 +105,6 @@
     "zh-TW": "附圖片的文字欄"
   },
   "class": "index-section",
-  "settings": [
-    {
-      "type": "select",
-      "id": "align_text",
-      "label": {
-        "cs": "Zarovnání textu",
-        "da": "Tekstjustering",
-        "de": "Textausrichtung",
-        "en": "Text alignment",
-        "es": "Alineación de texto",
-        "fi": "Tekstin tasaus",
-        "fr": "Alignement du texte",
-        "it": "Allineamento del testo",
-        "ja": "テキストアラインメント",
-        "ko": "텍스트 정렬",
-        "nb": "Tekstjustering",
-        "nl": "Tekstuitlijning",
-        "pl": "Wyrównanie tekstu",
-        "pt-BR": "Alinhamento de texto",
-        "pt-PT": "Alinhamento de texto",
-        "sv": "Textjustering",
-        "th": "การจัดตำแหน่งข้อความ",
-        "tr": "Metin hizalaması",
-        "vi": "Căn chỉnh văn bản",
-        "zh-CN": "文本对齐方式",
-        "zh-TW": "文字對齊"
-      },
-      "default": "left",
-      "options": [
-        {
-          "value": "left",
-          "label": {
-            "cs": "Doleva",
-            "da": "Venstre",
-            "de": "Links",
-            "en": "Left",
-            "es": "Izquierda",
-            "fi": "Vasen",
-            "fr": "Gauche",
-            "it": "Sinistra",
-            "ja": "左",
-            "ko": "왼쪽",
-            "nb": "Venstre",
-            "nl": "Links",
-            "pl": "Do lewej",
-            "pt-BR": "Esquerda",
-            "pt-PT": "Esquerda",
-            "sv": "Vänster",
-            "th": "ด้านซ้าย",
-            "tr": "Sol",
-            "vi": "Bên trái",
-            "zh-CN": "左侧",
-            "zh-TW": "左方"
-          }
-        },
-        {
-          "value": "center",
-          "label": {
-            "cs": "Na střed",
-            "da": "Centreret",
-            "de": "Mittig",
-            "en": "Centered",
-            "es": "Centrado",
-            "fi": "Keskitetty",
-            "fr": "Centré",
-            "it": "Centrato",
-            "ja": "中央揃え",
-            "ko": "센터 맞추기",
-            "nb": "Sentrert",
-            "nl": "Gecentreerd",
-            "pl": "Wyśrodkowane",
-            "pt-BR": "Centralizado",
-            "pt-PT": "Centrado",
-            "sv": "Centrera",
-            "th": "ตรงกลาง",
-            "tr": "Orta",
-            "vi": "Giữa",
-            "zh-CN": "居中",
-            "zh-TW": "置中"
-          }
-        }
-      ]
-    }
-  ],
   "blocks": [
     {
       "type": "text_block",
