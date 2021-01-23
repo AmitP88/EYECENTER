@@ -2584,19 +2584,19 @@ hr {
   top: 35%;
   right: 5%;
   left: 5%;
-  margin: 0 auto;
-  width: 232px;
   height: fit-content;
 }
 
 .featured_columns_image_container > .label-content > .box-label {
   font-family: "Gotham Medium Regular" !important;
   font-size: 26px;
+  width: 232px;
 }
 
 .featured_columns_image_container > img {
   opacity: 0.9;
 }
+
 
 .placeholder-svg {
   display: block;
