@@ -2583,14 +2583,15 @@ hr {
   position: absolute;
   top: 35%;
   right: 5%;
+  left: 5%;
   margin: 0 auto;
-  width: 306px;
+  width: 232px;
   height: fit-content;
 }
 
 .featured_columns_image_container > .label-content > .box-label {
   font-family: "Gotham Medium Regular" !important;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 .featured_columns_image_container > img {
