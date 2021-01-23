@@ -1,10 +1,4 @@
 <div class="page-width">
-  {% if section.settings.title != blank %}
-    <div class="section-header text-center">
-      <h2>{{ section.settings.title | escape }}</h2>
-    </div>
-  {% endif %}
-
   <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} grid--flush-bottom">
     {%- assign grid_item_width = 'medium-up--one-third' -%}
     {%- assign max_height = 345 -%}
@@ -118,56 +112,6 @@
   },
   "class": "index-section",
   "settings": [
-    {
-      "type": "text",
-      "id": "title",
-      "label": {
-        "cs": "Nadpis",
-        "da": "Overskrift",
-        "de": "Titel",
-        "en": "Heading",
-        "es": "Título",
-        "fi": "Otsake",
-        "fr": "En-tête",
-        "it": "Heading",
-        "ja": "見出し",
-        "ko": "제목",
-        "nb": "Overskrift",
-        "nl": "Kop",
-        "pl": "Nagłówek",
-        "pt-BR": "Título",
-        "pt-PT": "Título",
-        "sv": "Rubrik",
-        "th": "ส่วนหัว",
-        "tr": "Başlık",
-        "vi": "Tiêu đề",
-        "zh-CN": "标题",
-        "zh-TW": "標題"
-      },
-      "default": {
-        "cs": "Text. sloupce s obrázky",
-        "da": "Tekstkolonner med billeder",
-        "de": "Textspalten mit Fotos",
-        "en": "Text columns with images",
-        "es": "Columnas de texto con imágenes",
-        "fi": "Tekstisarakkeet kuvilla",
-        "fr": "Colonnes de texte et images",
-        "it": "Colonne di testo con foto",
-        "ja": "画像付きテキスト列",
-        "ko": "이미지 포함 텍스트 열",
-        "nb": "Tekstkolonner med bilder",
-        "nl": "Tekstkolommen met afbeeldingen",
-        "pl": "Kolumny tekstowe z obrazami",
-        "pt-BR": "Texto em coluna com imagens",
-        "pt-PT": "Colunas texto c/ imagens",
-        "sv": "Textkolumner med bilder",
-        "th": "คอลัมน์ข้อความพร้อมรูปภาพ",
-        "tr": "Görsel içeren metin sütunları",
-        "vi": "Cột văn bản có hình ảnh",
-        "zh-CN": "带有图片的文本列",
-        "zh-TW": "附圖片的文字欄"
-      }
-    },
     {
       "type": "select",
       "id": "align_text",
