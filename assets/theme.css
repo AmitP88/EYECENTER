@@ -6196,13 +6196,35 @@ hr {
   margin-top: -175%;
 }
 
-.site-footer__content > .site-footer__item > .site-footer__item-inner > .title_container {
+.footer_content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site-footer__content {
+  display: block;
+  width: fit-content;
+}
+
+.site-footer__item {
+  padding: 0;
+}
+
+.site-footer__linklist-item {
+  padding: 0;
+}
+
+.site-footer__item-inner > .list--inline > li {
+  display: flex;
+}
+
+.site-footer__content > .title_container {
   margin: 0 auto;
   transform: rotate(0deg);
   float: left;
 }
 
-.site-footer__content > .site-footer__item > .site-footer__item-inner > .title_container > .title {
+.site-footer__content > .title_container > .title {
   color: #a77c5a;
 }
 
