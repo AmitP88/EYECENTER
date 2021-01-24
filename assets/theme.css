@@ -6196,6 +6196,16 @@ hr {
   margin-top: -175%;
 }
 
+.site-footer__content > .site-footer__item > .site-footer__item-inner > .title_container {
+  margin: 0 auto;
+  transform: rotate(0deg);
+  float: left;
+}
+
+.site-footer__content > .site-footer__item > .site-footer__item-inner > .title_container > .title {
+  color: #a77c5a;
+}
+
 .logo_product_quantity {
   text-transform: uppercase;
   font-family: "Gotham Medium Regular";

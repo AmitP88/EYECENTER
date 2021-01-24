@@ -149,9 +149,12 @@
              {{ block.shopify_attributes }}>
           <div class="site-footer__item-inner site-footer__item-inner--{{ block.type }}">
 
-            {%- if block.settings.title -%}
-              <p class="h4">{{ block.settings.title | escape }}</p>
-            {%- endif -%}
+            <div class="title_container">
+              <div class="title">
+                <span>{{ block.settings.title_1st_half }}</span>
+                <h1>{{ block.settings.title_2nd_half }}</h1>
+              </div>
+            </div>
 
             {%- case block.type -%}
               {%- when 'newsletter' -%}
@@ -693,54 +696,14 @@
       },
       "settings": [
         {
+          "id": "title_1st_half",
           "type": "text",
-          "id": "title",
-          "label": {
-            "cs": "Nadpis",
-            "da": "Overskrift",
-            "de": "Überschrift",
-            "en": "Heading",
-            "es": "Título",
-            "fi": "Otsake",
-            "fr": "Titre",
-            "it": "Heading",
-            "ja": "見出し",
-            "ko": "제목",
-            "nb": "Overskrift",
-            "nl": "Kop",
-            "pl": "Nagłówek",
-            "pt-BR": "Título",
-            "pt-PT": "Título",
-            "sv": "Rubrik",
-            "th": "ส่วนหัว",
-            "tr": "Başlık",
-            "vi": "Tiêu đề",
-            "zh-CN": "标题",
-            "zh-TW": "標題"
-          },
-          "default": {
-            "cs": "Rychlé odkazy",
-            "da": "Genvejslinks",
-            "de": "Quick-Links",
-            "en": "Quick links",
-            "es": "Enlaces rápidos",
-            "fi": "Pikalinkit",
-            "fr": "Liens rapides",
-            "it": "Link rapidi",
-            "ja": "クイックリンク",
-            "ko": "빠른 링크",
-            "nb": "Hurtigkoblinger",
-            "nl": "Snelle links",
-            "pl": "Szybkie linki",
-            "pt-BR": "Links rápidos",
-            "pt-PT": "Ligações rápidas",
-            "sv": "Snabblänkar",
-            "th": "ลิงก์ด่วน",
-            "tr": "Hızlı bağlantılar",
-            "vi": "Liên kết nhanh",
-            "zh-CN": "快速链接",
-            "zh-TW": "快速連結"
-          }
+          "label": "Menu Title 1st Half"
+        },
+        {
+          "id": "title_2nd_half",
+          "type": "text",
+          "label": "Menu Title 2nd Half"
         },
         {
           "type": "link_list",
