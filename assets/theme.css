@@ -6228,6 +6228,13 @@ hr {
   color: #a77c5a;
 }
 
+.footer_content > .site-footer__content:nth-child(1) > .site-footer__item > .site-footer__item-inner > .list--inline {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 130px;
+}
+
 .logo_product_quantity {
   text-transform: uppercase;
   font-family: "Gotham Medium Regular";
