@@ -5842,6 +5842,11 @@ hr {
   margin: 55px 0 30px 0;
   color: #ccb3a0;
 }
+
+.bottom_footer {
+  margin: 50px 150px;
+}
+
   @media only screen and (min-width: 750px) {
     .site-footer__hr {
       margin: 45px 150px 20px 150px; } }
