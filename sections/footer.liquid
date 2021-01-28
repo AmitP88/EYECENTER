@@ -240,9 +240,14 @@
 
   <div class="bottom_footer">
     <div class="left_half">
-      <img src="{{ section.settings.logo | img_url: 'master'}}" alt="logo">
+      <img src="{{ section.settings.logo | img_url: 'master' }}" alt="logo">
     </div>
-    <div class="right_half"></div>
+    <div class="right_half">
+      <div class="image_container">
+        <img src="{{ section.settings.app_1_logo | img_url: 'master' }}" alt="app 1 logo">
+        <img src="{{ section.settings.app_2_logo | img_url: 'master' }}" alt="app 2 logo">        
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -279,6 +284,16 @@
       "type": "image_picker",
       "id": "logo",
       "label": "Logo image"
+    },
+    {
+      "type": "image_picker",
+      "id": "app_1_logo",
+      "label": "App 1 logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "app_2_logo",
+      "label": "App 2 logo"
     },
     {
       "type": "header",

@@ -5845,6 +5845,24 @@ hr {
 
 .bottom_footer {
   margin: 50px 150px;
+  display: flex;
+}
+
+.bottom_footer > .left_half {
+  width: 50%;
+}
+
+.bottom_footer > .right_half {
+  width: 50%;
+}
+
+.bottom_footer > .right_half > .image_container {
+  width: 60%;
+  float: right;
+}
+
+.bottom_footer > .right_half > .image_container > img:nth-child(1) {
+  margin-right: 5%;
 }
 
   @media only screen and (min-width: 750px) {
