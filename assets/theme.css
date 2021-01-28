@@ -6802,6 +6802,18 @@ hr {
 .product-card__image-with-placeholder-wrapper {
   position: relative; }
 
+.hover_box {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+}
+
+.product-card__image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+}
+
 .product-card__title {
   /* border-bottom: 1px solid transparent;
   display: inline;
