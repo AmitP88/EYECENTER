@@ -6803,6 +6803,7 @@ hr {
   position: relative; }
 
 .hover_box {
+  display: inline;
   position: absolute;
   z-index: 2;
   left: 30px;
