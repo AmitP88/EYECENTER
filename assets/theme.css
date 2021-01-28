@@ -6755,6 +6755,7 @@ hr {
 
 .newsletter-section {
   padding-top: 55px;
+  padding-bottom: 55px;
   display: flex;
   width: 100%;
 }
