@@ -6809,6 +6809,14 @@ hr {
   left: 30px;
 }
 
+.plus_icon {
+  display: block;
+  margin: auto;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+}
+
 .product-card__image-wrapper {
   position: relative;
   z-index: 1;
