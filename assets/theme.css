@@ -6803,10 +6803,7 @@ hr {
   position: relative; }
 
 .hover_box {
-  display: inline;
-  position: absolute;
-  z-index: 2;
-  left: 30px;
+  display: none;
 }
 
 .plus_icon {
@@ -6820,6 +6817,16 @@ hr {
 
 .product_info {
   padding-left: 10%;
+}
+
+.product-card:hover > .hover_box {
+  display: inline !important;
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+}
+
+.product-card:hover > .product_info {
   margin-top: 50%;
 }
 
