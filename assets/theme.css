@@ -6807,12 +6807,7 @@ hr {
 }
 
 .plus_icon {
-  display: block;
-  margin: auto;
-  top: 100%;
-  left: 50%;
-  position: absolute;
-  z-index: 2;
+  display: none;
 }
 
 .product_info {
@@ -6824,6 +6819,15 @@ hr {
   position: absolute;
   z-index: 2;
   left: 30px;
+}
+
+.product-card:hover > .plus_icon {
+  display: block;
+  margin: auto;
+  top: 100%;
+  left: 50%;
+  position: absolute;
+  z-index: 2;  
 }
 
 .product-card:hover > .product_info {
