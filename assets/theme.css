@@ -6815,6 +6815,11 @@ hr {
   top: 100%;
   left: 50%;
   position: absolute;
+  z-index: 2;
+}
+
+.product_info {
+  padding-left: 10%;
 }
 
 .product-card__image-wrapper {
