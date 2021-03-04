@@ -2632,6 +2632,7 @@ hr {
   font-family: "Gotham Medium Regular" !important;
   font-size: 26px;
   width: 232px;
+  margin-left: 20%;
 }
 
 .featured_columns_image_container > img {
@@ -7857,6 +7858,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
   }
 
   .grid--view-items {
