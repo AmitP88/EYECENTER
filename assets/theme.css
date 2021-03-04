@@ -6814,14 +6814,18 @@ hr {
   padding-left: 10%;
 }
 
-.product-card:hover > .hover_box {
-  display: inline !important;
+.product-card:hover {
+  cursor: pointer;
+}
+
+.product-card:hover > .product-card__image-with-placeholder-wrapper > .hover_box {
+  display: inline;
   position: absolute;
   z-index: 2;
   left: 30px;
 }
 
-.product-card:hover > .plus_icon {
+.product-card:hover > .product-card__image-with-placeholder-wrapper > .plus_icon {
   display: block;
   margin: auto;
   top: 100%;
