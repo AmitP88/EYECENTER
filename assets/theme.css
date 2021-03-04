@@ -7529,7 +7529,7 @@ hr {
 
 .cell_content .title {
   font-family: "Gotham Bold Regular";
-  font-size: 24px;
+  font-size: 21px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #a77c5a;
@@ -7537,7 +7537,7 @@ hr {
 
 .cell_content .subtitle {
   font-family: "MyriadPro Semibold";
-  font-size: 24px;
+  font-size: 20px;
   text-transform: lowercase;
   color: #b2b2b2;
 }
