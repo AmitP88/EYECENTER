@@ -2622,17 +2622,18 @@ hr {
 
 .featured_columns_image_container > .label-content {
   position: absolute;
-  top: 35%;
+  bottom: 10%;
   right: 5%;
   left: 5%;
   height: fit-content;
+  width: fit-content;
 }
 
 .featured_columns_image_container > .label-content > .box-label {
   font-family: "Gotham Medium Regular" !important;
   font-size: 26px;
   width: 232px;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .featured_columns_image_container > img {
