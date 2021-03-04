@@ -4985,7 +4985,10 @@ hr {
       -moz-align-items: center;
       -ms-align-items: center;
       -o-align-items: center;
-      align-items: center; } }
+      align-items: center;
+      padding-top: 2.5%;
+    } 
+  }
 
 /*================ Modals ================*/
 .modal {
