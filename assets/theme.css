@@ -7668,7 +7668,7 @@ hr {
   .cell_1, .cell_2 {
     width: 100%;
     display: block;
-    padding: 5%;
+    padding: 15%; /* regular is 5% */
   }
 
   .cell_1 {
