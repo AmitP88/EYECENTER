@@ -7614,12 +7614,27 @@ hr {
     display: block;
   }
 
+  .Box-1 {
+    grid-area: Box-1;
+    height: 500px;
+    background-color: black;
+    position: relative;
+  }
+
   .Box-1 > .label-content {
     position: absolute;
-    top: 5%;
+    bottom: 5%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .Box-1 img {
+    width: 100%;
+    height: inherit;
+    opacity: 0.8;
+    margin-bottom: -6px;
+    object-fit: cover;
   }
 
   .Box-3 {
