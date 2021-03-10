@@ -592,13 +592,24 @@ textarea {
   text-align: center !important; }
 
 /*================ Build Responsive Grid Classes ================*/
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  .small--one-half {
+    width: 100%;
+  }
+
+  .product-card > .product_info {
+    padding-left: 0;
+  }
+
+}
+
 @media only screen and (max-width: 749px) {
   /* Whole */
   .small--one-whole {
     width: 100%; }
   /* Halves */
-  .small--one-half {
-    width: 50%; }
+  /* .small--one-half {
+    width: 50%; } */
   /* Thirds */
   .small--one-third {
     width: 33.33333%; }
