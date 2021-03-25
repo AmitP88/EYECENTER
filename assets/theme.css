@@ -7691,6 +7691,23 @@ hr {
     background: none;
   }
 
+  .price {
+    display: block;
+    width: min-content;
+  }
+
+  .price__compare {
+    width: max-content;
+  }
+
+  .price-item {
+    width: max-content;
+  }
+
+  .price__regular {
+    width: max-content;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
@@ -7771,6 +7788,11 @@ hr {
   .cell_1 {
     border-right: 0.5px solid #a77c5a;
     border-bottom: none;
+  }
+
+  .price {
+    display: flex;
+    width: fit-content;
   }
 
 }
