@@ -7740,6 +7740,19 @@ hr {
     margin-bottom: 15%;
   }
 
+  .featured_columns_image_container > .label-content {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+  }
+
+  .featured_columns_image_container > .label-content > .box-label {
+    margin: 0;
+    width: 250px;
+
+  }
+
 }
 
 @media only screen and (min-width: 425px) {
