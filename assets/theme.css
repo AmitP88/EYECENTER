@@ -7736,6 +7736,10 @@ hr {
     width: max-content;
   }
 
+  .logo_item_container {
+    margin-bottom: 15%;
+  }
+
 }
 
 @media only screen and (min-width: 425px) {
