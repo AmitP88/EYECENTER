@@ -5467,7 +5467,10 @@ hr {
 
   @media only screen and (max-width: 749px) {
     .price {
-      font-size: calc(((var(--font-size-base) - 1) / (var(--font-size-base))) * 1em); } }
+      /* font-size: calc(((var(--font-size-base) - 1) / (var(--font-size-base))) * 1em);  */
+      font-size: larger;
+    } 
+  }
   .price dl {
     margin-top: 0; }
   .price dd {
@@ -7724,6 +7727,15 @@ hr {
   .shipping_container {
     height: fit-content;
   }
+
+  .price-item {
+    font-size: x-large;
+  }
+
+  .price dd {
+    width: max-content;
+  }
+
 }
 
 @media only screen and (min-width: 425px) {
