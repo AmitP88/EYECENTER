@@ -7750,7 +7750,32 @@ hr {
   .featured_columns_image_container > .label-content > .box-label {
     margin: 0;
     width: 250px;
+  }
 
+  .newsletter-section {
+    display: block;
+  }
+
+  .newsletter-section > .section_content {
+    width: 100%;
+    padding: 5% 10%;
+  }
+
+
+  .newsletter-section > .section_content > .section-header > .rte > p {
+    width: fit-content;
+    font-size: larger;
+  }
+
+  input,
+  textarea,
+  select,
+  .disclosure__toggle {
+    border-right: 1px solid #d3bdac;
+  }
+
+  .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
+    border-left: 1px solid #d3bdac;
   }
 
 }
