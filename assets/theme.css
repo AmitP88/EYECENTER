@@ -7778,6 +7778,43 @@ hr {
     border-left: 1px solid #d3bdac;
   }
 
+  .footer_content {
+    display: block;
+  }
+
+  .footer_content > .site-footer__content:nth-child(1) > .site-footer__item > .site-footer__item-inner > .list--inline  {
+    columns: 1;
+    -webkit-columns: 1;
+    margin-bottom: 25%;
+  }
+
+  .bottom_footer {
+    display: block;
+    margin: 50px 25px;
+    height: 200px;
+  }
+
+  .bottom_footer > .left_half {
+    margin: 0 auto;
+    margin-bottom: 15%;
+  }
+
+  .bottom_footer > .right_half {
+    margin: 0 auto;
+    margin-bottom: 15%;
+  }
+
+  .bottom_footer > .right_half > .image_container {
+    width: 100%;
+  }
+  
+  .bottom_footer > .left_half > img {
+    margin-bottom: 20%;
+  }
+
+  .bottom_footer > .right_half > .image_container > img {
+    margin-bottom: 20%;
+  }
 }
 
 @media only screen and (min-width: 425px) {
