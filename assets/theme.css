@@ -7791,12 +7791,11 @@ hr {
   .bottom_footer {
     display: block;
     margin: 50px 25px;
-    height: 200px;
+    height: 250px;
   }
 
   .bottom_footer > .left_half {
     margin: 0 auto;
-    margin-bottom: 15%;
   }
 
   .bottom_footer > .right_half {
@@ -7809,11 +7808,11 @@ hr {
   }
   
   .bottom_footer > .left_half > img {
-    margin-bottom: 20%;
+    margin-bottom: 40%;
   }
 
   .bottom_footer > .right_half > .image_container > img {
-    margin-bottom: 20%;
+    margin-bottom: 40%;
   }
 }
 
