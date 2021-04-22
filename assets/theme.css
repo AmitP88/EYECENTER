@@ -7728,6 +7728,10 @@ hr {
     height: fit-content;
   }
 
+  .title_container {
+    margin-bottom: 10%;
+  }
+
   .product-card:hover > .product_info {
     margin-top: 0;
   }
