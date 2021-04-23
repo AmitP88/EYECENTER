@@ -3867,6 +3867,7 @@ hr {
   @media only screen and (max-width: 749px) {
     .site-header__logo {
       padding-left: 22px;
+      padding-right: 22px;
       text-align: left; }
       .site-header__logo img {
         margin: 0; } }
@@ -7711,16 +7712,25 @@ hr {
     width: max-content;
   }
 
+  .newsletter-section > .title_container {
+    margin-bottom: 0;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
   .Box-1 > .label-content {
     position: absolute;
-    top: 10%;
+    top: 50%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
   }
+
+  .featured_columns_image_container > .label-content {
+    margin: 0 auto;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -7799,7 +7809,7 @@ hr {
   .bottom_footer {
     display: block;
     margin: 50px 25px;
-    height: 250px;
+    height: 300px;
   }
 
   .bottom_footer > .left_half {
@@ -7815,12 +7825,13 @@ hr {
     width: 100%;
   }
   
-  .bottom_footer > .left_half > img {
-    margin-bottom: 40%;
-  }
+  /* .bottom_footer > .left_half > img {
+    margin-bottom: 20% auto;
+  } */
 
   .bottom_footer > .right_half > .image_container > img {
-    margin-bottom: 40%;
+    display: block;
+    margin: 50% auto;
   }
 }
 
