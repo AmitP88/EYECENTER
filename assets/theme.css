@@ -7725,6 +7725,10 @@ hr {
     margin-bottom: 0;
   }
 
+  .input-group__field {
+    height: 60px;
+  }
+
   .bottom_footer {
     height: 250px;
   }
@@ -7773,6 +7777,10 @@ hr {
 
   .bottom_footer {
     height: 350px;
+  }
+
+  .input-group__field {
+    margin-bottom: 0;
   }
 
 }
