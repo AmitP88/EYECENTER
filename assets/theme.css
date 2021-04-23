@@ -3865,10 +3865,6 @@ hr {
         text-align: left;
         margin: 15px 0; } }
   @media only screen and (max-width: 749px) {
-    .site-header__logo {
-      padding-left: 22px;
-      padding-right: 22px;
-      text-align: left; }
       .site-header__logo img {
         margin: 0; } }
 
@@ -7602,6 +7598,12 @@ hr {
 /*=========================================================*/
 
 @media only screen and (min-width: 320px) {
+  .site-header__logo {
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: left; 
+  }
+
   /* Hero section */
   .glasses .title {
     margin: 0 auto;
@@ -7716,6 +7718,10 @@ hr {
     margin-bottom: 0;
   }
 
+  .bottom_footer {
+    height: 300px;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
@@ -7729,6 +7735,10 @@ hr {
 
   .featured_columns_image_container > .label-content {
     margin: 0 auto;
+  }
+
+  .bottom_footer {
+    height: 350px;
   }
 
 }
@@ -7809,7 +7819,6 @@ hr {
   .bottom_footer {
     display: block;
     margin: 50px 25px;
-    height: 300px;
   }
 
   .bottom_footer > .left_half {
