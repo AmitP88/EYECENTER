@@ -7719,7 +7719,7 @@ hr {
   }
 
   .bottom_footer {
-    height: 300px;
+    height: 250px;
   }
 
 }
@@ -7739,6 +7739,22 @@ hr {
 
   .bottom_footer {
     height: 350px;
+  }
+
+}
+
+@media only screen and (min-width: 425px) {
+  .site-header__logo {
+    padding-left: 25%;
+    padding-right: 25%; 
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
   }
 
 }
@@ -7844,16 +7860,6 @@ hr {
   }
 }
 
-@media only screen and (min-width: 425px) {
-  .Box-1 > .label-content {
-    position: absolute;
-    top: 20%;
-    right: 0%;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   .Box-1 > .label-content {
     position: absolute;
@@ -7865,6 +7871,11 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
+  .site-header__logo {
+    padding-left: 5%;
+    padding-right: 5%; 
+  }
+
   .special-offers {
     margin-top: -22%;
   }
