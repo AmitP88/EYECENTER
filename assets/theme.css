@@ -7928,8 +7928,16 @@ hr {
     padding-right: 5%; 
   }
 
+  .hero {
+    max-height: 550px;
+  }
+
+  .title_container {
+    height: 75px;
+  }
+
   .special-offers {
-    margin-top: -22%;
+    margin-top: -10%;
   }
 
   .special-offers .content .grid-container {
@@ -7943,13 +7951,17 @@ hr {
     max-width: 1289px;
   }
 
+  .box-label {
+    font-size: 25px;
+  }
+
   .Box-3 img {
     object-fit: cover;
   }
 
   .Box-1 > .label-content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 1%;
     margin: 0 auto;
     width: 306px;
@@ -7957,7 +7969,7 @@ hr {
 
   .Box-3 > .label-content {
     position: absolute;
-    top: 65%;
+    top: 70%;
     width: 100%;
   }
 
@@ -7970,11 +7982,17 @@ hr {
   .cell_1, .cell_2 {
     display: flex;
     align-items: center;
+    width: 50%;
   }
 
   .cell_1 {
     border-right: 0.5px solid #a77c5a;
     border-bottom: none;
+  }
+
+  
+  .cell_content .title {
+    font-size: 15px;
   }
 
   .price {
