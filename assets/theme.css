@@ -4881,7 +4881,7 @@ hr {
 .mobile-nav__sublist-link {
   display: block;
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px 25px;
   font-size: 16px; }
 
 .mobile-nav__link {
@@ -7752,6 +7752,10 @@ hr {
 }
 
 @media only screen and (min-width: 375px) {
+  .mobile-nav__link, .mobile-nav__sublist-link {
+    padding: 15px 40px;
+  }
+
   .Box-1 > .label-content {
     position: absolute;
     top: 50%;
@@ -7771,12 +7775,22 @@ hr {
 }
 
 @media only screen and (min-width: 425px) {
+  .mobile-nav__link, .mobile-nav__sublist-link {
+    padding: 15px 55px;
+  }
+
   .Box-1 > .label-content {
     position: absolute;
     top: 50%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
+  }
+
+  .site-header__logo {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: left;
   }
 
   .featured_columns_image_container > .label-content {
@@ -7810,6 +7824,7 @@ hr {
   .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
     border-left: none;
   }
+
 
 }
 
