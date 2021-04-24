@@ -7766,11 +7766,6 @@ hr {
 }
 
 @media only screen and (min-width: 425px) {
-  .site-header__logo {
-    padding-left: 25%;
-    padding-right: 25%; 
-  }
-
   .Box-1 > .label-content {
     position: absolute;
     top: 50%;
