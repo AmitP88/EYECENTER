@@ -7949,10 +7949,16 @@ hr {
 
   .Box-1 > .label-content {
     position: absolute;
-    top: 35%;
+    top: 50%;
     right: 1%;
     margin: 0 auto;
     width: 306px;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 65%;
+    width: 100%;
   }
 
   .shipping_container {
