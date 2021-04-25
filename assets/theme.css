@@ -7749,6 +7749,10 @@ hr {
     height: 250px;
   }
 
+  .newsletter-section > .section_content > .section-header > .rte > p {
+    text-align: start;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
@@ -8009,6 +8013,10 @@ hr {
 
   .input-group__field {
     height: auto;
+  }
+
+  .newsletter-section > .section_content > .section-header > .rte > p {
+    text-align: center;
   }
 
 }
