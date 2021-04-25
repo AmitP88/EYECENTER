@@ -8072,6 +8072,10 @@ hr {
     max-height: 750px;
   }
 
+  .Box-3 {
+    margin-bottom: 0;
+  }
+
   .product-card:hover {
     cursor: pointer;
   }
