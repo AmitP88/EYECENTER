@@ -7810,7 +7810,7 @@ hr {
 
   .Box-1 > .label-content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
@@ -7976,7 +7976,9 @@ hr {
   }
 
   .special-offers {
-    margin-top: -10%;
+    margin-top: -5%;
+    display: block;
+    padding: 5%;
   }
 
   .special-offers .content .grid-container {
