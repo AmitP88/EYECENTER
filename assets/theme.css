@@ -6225,6 +6225,10 @@ hr {
     margin-bottom: 15%;
   }
 
+  .site-footer__content > .title_container {
+    margin-bottom: 0;
+  }
+
 }
 
 @media only screen and (min-width: 750px) {
@@ -6287,7 +6291,6 @@ hr {
   margin: 0 auto;
   transform: rotate(0deg);
   float: left;
-  margin-bottom: 25px;
 }
 
 .site-footer__content > .title_container > .title {
