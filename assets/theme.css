@@ -8069,9 +8069,8 @@ hr {
 
   .featured_columns_image_container > .label-content > .box-label {
     font-family: "Gotham Medium Regular" !important;
-    font-size: 26px;
-    width: 232px;
-    margin-left: 10%;
+    font-size: 20px;
+    width: 200px;
   }
 
   .input-group__field {
@@ -8090,6 +8089,8 @@ hr {
     margin-top: 55px;
     padding: 80px 0 45px 0;
   }
+
+
 
 }
 
@@ -8144,6 +8145,24 @@ hr {
     left: 50%;
     position: absolute;
     z-index: 2;  
+  }
+
+  .logo-bar-container {
+    display: block;
+    height: auto;
+  }
+
+  .logo-bar-container > .section-header > .title_container {
+    display: inherit;
+    margin: 0 auto;
+  }
+
+  .logo-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .bottom_footer {
@@ -8275,6 +8294,17 @@ hr {
     width: 1289px;
   }
 
+  .logo-bar-container {
+    display: flex;
+    height: auto;
+  }
+
+  .logo-bar {
+    display: flex;
+    grid-gap: 5%;
+    width: fit-content;
+    margin: 0 auto;
+  }
 
 
 }
