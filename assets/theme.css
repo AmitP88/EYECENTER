@@ -6234,9 +6234,11 @@ hr {
   } 
 
   .logo-bar {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .logo-bar__item {
@@ -8055,6 +8057,14 @@ hr {
   .price {
     display: flex;
     width: fit-content;
+  }
+
+  .index-section > .logo-bar-container {
+    padding: 10% 0 15% 0;
+  }
+
+  .index-section > .logo-bar-container > .section-header {
+    margin-bottom: 0;
   }
 
   .featured_columns_image_container > .label-content > .box-label {
