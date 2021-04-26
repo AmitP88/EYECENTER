@@ -7615,7 +7615,7 @@ hr {
   }
 
   .special-offers > .title_container > .title {
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
 
   .title_container {
@@ -7701,6 +7701,10 @@ hr {
   .cell_1::after {
     border: none;
     background: none;
+  }
+
+  .cell_content .title {
+    font-size: 18px;
   }
 
   .price {
@@ -7968,7 +7972,7 @@ hr {
   }
 
   .hero {
-    max-height: 550px;
+    max-height: 500px;
   }
 
   .title_container {
@@ -7992,6 +7996,10 @@ hr {
     max-width: 1289px;
   }
 
+  .special-offers > .title_container > .title {
+    margin-bottom: 5%;
+  }
+
   .box-label {
     font-size: 25px;
   }
@@ -8005,13 +8013,21 @@ hr {
     top: 55%;
     right: 1%;
     margin: 0 auto;
-    width: 306px;
+    width: 268px;
+  }
+
+  .Box-1 > .label-content > .box-label {
+    font-size: 26px;
   }
 
   .Box-3 > .label-content {
     position: absolute;
     top: 70%;
     width: 100%;
+  }
+
+  .Box-3 > .label-content > .box-label {
+    font-size: 26px;
   }
 
   .shipping_container {
@@ -8069,11 +8085,35 @@ hr {
 
 @media only screen and (min-width: 1023px) {
   .hero {
-    max-height: 750px;
+    max-height: 850px;
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 50%;
+    right: 1%;
+  }
+
+  .Box-1 > .label-content > .box-label {
+    font-size: 30px;
   }
 
   .Box-3 {
     margin-bottom: 0;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+  }
+
+  .Box-3 > .label-content > .box-label {
+    font-size: 30px;
+  }
+
+  .cell_content .title {
+    font-size: 20px;
   }
 
   .product-card:hover {
@@ -8117,7 +8157,7 @@ hr {
     padding-right: 8%;
     position: relative;
     z-index: 2;
-    margin-top: -11%;
+    margin-top: -8%;
     padding: 0;
   }
 
