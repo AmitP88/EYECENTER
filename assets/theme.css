@@ -8094,6 +8094,7 @@ hr {
 
   .newsletter-section > .section_content > .section-header > .rte > p {
     text-align: center;
+    font-size: 21px;
   }
 
   .title_container .title {
@@ -8105,6 +8106,20 @@ hr {
     padding: 80px 0 45px 0;
   }
 
+  .hero__inner {
+    padding: 55px 5%;
+  }
+
+  .footer_content {
+    padding: 0 10%;
+  }
+
+  .footer_content > .site-footer__content:nth-child(1) > .site-footer__item > .site-footer__item-inner > .list--inline {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    column-gap: 5%;
+  }
 
 
 }
