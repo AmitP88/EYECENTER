@@ -7681,6 +7681,7 @@ hr {
   .label-content a > button {
     width: 90%;
     margin-top: 10%;
+    font-size: 15px;
   }
 
   .shipping_container {
@@ -7737,7 +7738,7 @@ hr {
 
   .featured_columns_image_container > .label-content {
     position: absolute;
-    bottom: 10%;
+    bottom: 17%;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -8067,14 +8068,23 @@ hr {
     margin-bottom: 0;
   }
 
+  .featured_columns_image_container > .label-content {
+    position: absolute;
+    bottom: 17%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
   .featured_columns_image_container > .label-content > .box-label {
     font-family: "Gotham Medium Regular" !important;
-    font-size: 20px;
-    width: 200px;
+    font-size: 26px;
+    width: 235px;
   }
 
   .featured_columns_image_container > .label-content a > button {
-    font-size: 12px;
+    font-size: 15px;
+    width: 100%;
   }
 
   .input-group__field {
@@ -8119,6 +8129,46 @@ hr {
     -webkit-columns: 2;
     -moz-columns: 2;
     column-gap: 5%;
+  }
+
+  .feature_columns_section > .page-width > .grid.grid--uniform.grid--flush-bottom {
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .feature_columns_section > .page-width > .grid > .grid__item {
+    float: center;
+    padding-left: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bottom_footer {
+    display: flex;
+    margin: 10%;
+  }
+
+  .bottom_footer > .right_half {
+    width: 75%;
+  }
+
+  .bottom_footer > .right_half > .image_container {
+    width: 75%;
+    display: flex;
+    float: right;
+  }
+
+  .bottom_footer > .left_half > .image_container > img {
+    margin-bottom: 0;
+  }
+
+  .bottom_footer > .right_half > .image_container > img {
+    margin-bottom: 0;
+  }
+
+  .bottom_footer > .left_half {
+    width: inherit;
+    height: fit-content;
   }
 
 
