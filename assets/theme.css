@@ -8073,8 +8073,23 @@ hr {
     width: 200px;
   }
 
+  .featured_columns_image_container > .label-content a > button {
+    font-size: 12px;
+  }
+
   .input-group__field {
     height: auto;
+  }
+
+  .newsletter-section {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    margin-bottom: 20%;
+  }
+
+  .newsletter-section > .section_content {
+    padding-right: 0;
   }
 
   .newsletter-section > .section_content > .section-header > .rte > p {
