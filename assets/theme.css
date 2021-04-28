@@ -8175,18 +8175,27 @@ hr {
 }
 
 @media only screen and (min-width: 1023px) {
+  .glasses .title {
+    margin: 0 auto;
+    height: 80px;
+    max-width: 100%;
+  }
+
   .hero {
-    max-height: 850px;
+    max-height: 650px;
   }
 
   .Box-1 > .label-content {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 5%;
+    margin: 0 auto;
+    width: 300px;
   }
 
   .Box-1 > .label-content > .box-label {
     font-size: 30px;
+    padding: 0;
   }
 
   .Box-3 {
@@ -8227,6 +8236,15 @@ hr {
     z-index: 2;  
   }
 
+  .label-content a > button {
+    width: 306px;
+    height: 79px;
+  }
+
+  .index-section > .logo-bar-container {
+    padding: 5% 0 15% 0;
+  }
+
   .logo-bar-container {
     display: block;
     height: auto;
@@ -8246,7 +8264,7 @@ hr {
   }
 
   .bottom_footer {
-    height: 100px;
+    height: 65px;
   }
 
 }
