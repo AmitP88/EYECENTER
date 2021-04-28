@@ -8271,6 +8271,11 @@ hr {
     padding: 1%;
   }
 
+  .feature_columns_section > .page-width {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .bottom_footer {
     height: 65px;
   }
