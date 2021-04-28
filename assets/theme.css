@@ -8145,7 +8145,7 @@ hr {
 
   .bottom_footer {
     display: flex;
-    margin: 10%;
+    margin: 5% 10%;
   }
 
   .bottom_footer > .right_half {
