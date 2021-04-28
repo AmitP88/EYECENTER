@@ -8263,6 +8263,14 @@ hr {
     margin: 0 auto;
   }
 
+  .feature_columns_section > .page-width > .grid {
+    display: flex;
+  }
+
+  .feature_columns_section > .page-width > .grid  > .grid__item {
+    padding: 1%;
+  }
+
   .bottom_footer {
     height: 65px;
   }
