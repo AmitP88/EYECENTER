@@ -8436,3 +8436,34 @@ hr {
 
 
 }
+
+@media only screen and (min-width: 1400px) {
+  .logo-bar {
+    display: flex;
+    justify-content: flex-end;
+    grid-gap: 5%;
+    width: fit-content;
+    margin: 0 auto;
+    margin-right: 5%;
+  } 
+
+  .Box-1 {
+    height: 620px;
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    margin: 0 auto;
+    width: 306px;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 70%;
+    width: 100%;
+  }
+
+}
+
