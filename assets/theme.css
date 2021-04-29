@@ -8305,6 +8305,10 @@ hr {
     padding: 0;
   }
 
+  .special-offers > .title_container {
+    margin-top: 10%;
+  }
+
   .special-offers .content {
     padding-right: 10%;
   }
