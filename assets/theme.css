@@ -8242,7 +8242,7 @@ hr {
   }
 
   .index-section > .logo-bar-container {
-    padding: 5% 0 15% 0;
+    padding: 10% 0;
   }
 
   .logo-bar-container {
@@ -8315,7 +8315,7 @@ hr {
     transform: rotate(-90deg);
     height: 50px;
     width: 150px;
-    margin-top: 10%;
+    margin-top: -80%;
   }
   
   .special-offers .content .grid-container {
@@ -8409,15 +8409,28 @@ hr {
     width: 1289px;
   }
 
+  .logo-bar-container > .section-header > .title_container {
+    margin-top: -205%; /* -175% */
+  }
+
   .logo-bar-container {
     display: flex;
     height: auto;
   }
 
+  .logo-bar__item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaaaaa;
+    width: 225px;
+    height: 225px;
+    margin: 0 auto;
+  }
+
   .logo-bar {
     display: flex;
     grid-gap: 5%;
-    width: fit-content;
+    width: 100%;
     margin: 0 auto;
   }
 
