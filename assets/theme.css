@@ -7604,6 +7604,10 @@ hr {
   }
 
   /* Hero section */
+  .glasses {
+    padding: 0 10%;
+  }
+
   .glasses .title {
     margin: 0 auto;
     height: 55px;
