@@ -7842,6 +7842,51 @@ hr {
 
 }
 
+@media only screen and (min-width: 407px) and (max-width: 424px) {
+  .mobile-nav__link, .mobile-nav__sublist-link {
+    padding: 15px 11%;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 55%;
+    padding: 0 5%;
+  }
+
+  .Box-3 > .label-content > .box-label {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 27px;
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .Box-1 > .label-content > .box-label {
+    font-size: 27px;
+  }
+
+  .featured_columns_image_container > .label-content > .box-label {
+    font-size: 28px;
+  }
+
+  .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
+    border-left: none;
+  }
+
+  input, textarea, select, .disclosure__toggle {
+    border-right: none;
+  }
+
+}
+
 @media only screen and (min-width: 425px) {
   .mobile-nav__link, .mobile-nav__sublist-link {
     padding: 15px 8%;
