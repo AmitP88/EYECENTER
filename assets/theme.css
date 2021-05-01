@@ -8086,6 +8086,10 @@ hr {
     margin-top: 0;
   }
 
+  .glasses {
+    padding: 0 2%;
+  }
+
   .hero {
     max-height: 500px;
   }
@@ -8125,7 +8129,7 @@ hr {
 
   .Box-1 > .label-content {
     position: absolute;
-    top: 55%;
+    top: 65%;
     right: 1%;
     margin: 0 auto;
     width: 268px;
@@ -8133,16 +8137,19 @@ hr {
 
   .Box-1 > .label-content > .box-label {
     font-size: 26px;
+    width: 105%;
+    padding-left: 5%;
   }
 
   .Box-3 > .label-content {
     position: absolute;
-    top: 70%;
+    top: 75%;
     width: 100%;
   }
 
   .Box-3 > .label-content > .box-label {
     font-size: 26px;
+    width: 100%;
   }
 
   .shipping_container {
@@ -8155,6 +8162,7 @@ hr {
     display: flex;
     align-items: center;
     width: 50%;
+    padding: 9%;
   }
 
   .cell_1 {
