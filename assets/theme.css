@@ -8082,6 +8082,10 @@ hr {
     padding-right: 5%; 
   }
 
+  .glasses_container {
+    margin-top: 0;
+  }
+
   .hero {
     max-height: 500px;
   }
