@@ -8557,6 +8557,18 @@ hr {
     margin: 0 auto;
   }
 
+  .newsletter-section {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .newsletter-section > .section_content {
+    width: 100%;
+    padding-right: 10%;
+  }
+
   .bottom_footer {
     height: fit-content;
     margin: 0 10%;
@@ -8633,13 +8645,6 @@ hr {
 
   .product-card:hover > .product_info {
     margin-top: 50%;
-  }
-
-  .newsletter-section {
-    display: flex;
-    margin: 0 auto;
-    width: 100%;
-    margin-bottom: 10%;
   }
 
   .newsletter-section > .section_content {
