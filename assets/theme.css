@@ -8061,7 +8061,15 @@ hr {
 @media only screen and (min-width: 600px) {
   .Box-1 > .label-content {
     position: absolute;
-    top: 20%;
+    top: 50%;
+    right: 0%;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 65%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
