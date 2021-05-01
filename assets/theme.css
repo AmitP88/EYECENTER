@@ -8184,6 +8184,10 @@ hr {
     padding: 10% 0 15% 0;
   }
 
+  .logo-bar-container > .section-header > .title_container {
+    margin-top: 0;
+  }
+
   .index-section > .logo-bar-container > .section-header {
     margin-bottom: 0;
   }
