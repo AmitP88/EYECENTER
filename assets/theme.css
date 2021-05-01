@@ -7604,6 +7604,10 @@ hr {
   }
 
   /* Hero section */
+  .glasses_container {
+    margin-top: 10%;
+  }
+
   .glasses {
     padding: 0 10%;
   }
@@ -7889,24 +7893,43 @@ hr {
 
 @media only screen and (min-width: 425px) {
   .mobile-nav__link, .mobile-nav__sublist-link {
-    padding: 15px 8%;
+    padding: 15px 10%;
   }
+
+  .glasses .title {
+    margin: 0 auto;
+    height: 70px;
+    max-width: 100%;
+  }
+
+  .Box-1 {
+    height: 600px;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 55%;
+  } 
 
   .Box-1 > .label-content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     right: 0%;
     margin: 0 auto;
     width: 100%;
-
+    height: fit-content;
   }
 
   .Box-3 > .label-content > .box-label {
-    font-size: 30px;    
+    font-size: 30px;
+    width: 80%;
+    margin: 0 auto; 
   }
 
   .Box-1 > .label-content > .box-label {
     font-size: 30px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .site-header__logo {
@@ -7924,7 +7947,7 @@ hr {
 
   .featured_columns_image_container > .label-content > .box-label {
     font-family: "Gotham Medium Regular" !important;
-    font-size: 30px;
+    font-size: 28px;
     width: 265px;
   }
 
@@ -7943,6 +7966,34 @@ hr {
     border-left: none;
   }
 
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+  .glasses .title {
+    margin: 0 auto;
+    height: 75px;
+    max-width: 100%;
+  }
+
+  .Box-3 > .label-content {
+    position: absolute;
+    top: 60%;
+  }
+
+  .Box-3 > .label-content > .box-label {
+    font-size: 33px;
+    width: 65%;    
+  }
+
+  .Box-1 > .label-content {
+    position: absolute;
+    top: 50%;
+  }
+
+  .Box-1 > .label-content > .box-label {
+    font-size: 33px;
+  }
 
 }
 
