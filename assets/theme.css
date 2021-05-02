@@ -8179,6 +8179,10 @@ hr {
     margin-top: 0;
   }
 
+  .price--on-sale .price__sale {
+    display: block;
+  }
+
   .price {
     display: flex;
     width: fit-content;
@@ -8577,7 +8581,7 @@ hr {
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1400px) {
+@media only screen and (min-width: 768px) and (max-width: 1399px) {
   .collection {
     margin: 10% 0;
   }
@@ -8586,6 +8590,15 @@ hr {
     display: flex;
     width: min-content;
   } */
+
+  .collection > .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .collection > .grid > .medium-up--one-quarter {
+    width: 100%;
+  }
 
   .price-item {
     font-size: x-large;
