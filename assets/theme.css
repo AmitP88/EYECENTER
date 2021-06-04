@@ -5883,9 +5883,9 @@ hr {
   float: right;
 }
 
-/* .bottom_footer > .right_half > .image_container > img:nth-child(1) {
-  margin-right: 5%;
-} */
+.bottom_footer > .right_half > .image_container > img {
+  object-fit: contain;
+}
 
   @media only screen and (min-width: 750px) {
     .site-footer__hr {
