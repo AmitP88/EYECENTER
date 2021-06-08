@@ -3848,6 +3848,14 @@ hr {
   margin-bottom: 10%;
 }
 
+.product-single__thumbnails {
+  justify-content: center;
+}
+
+#shopify-section-product-recommendations {
+  margin-bottom: 10%;
+}
+
 /*================ MODULES ================*/
 .site-header {
   background-color: #f2ebe6 }
