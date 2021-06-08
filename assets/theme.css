@@ -3831,10 +3831,21 @@ hr {
 /*================ PRODUCT PAGE ================*/
 .product-single__title {
   text-align: center;
+  font-size: xx-large;
+  margin-left: 70px;
 }
 
 .single-option-selector {
   border-right: 1px solid lightgray;
+}
+
+.product-template__container .grid__item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-template__container .grid {
+  margin-bottom: 10%;
 }
 
 /*================ MODULES ================*/
@@ -4415,7 +4426,9 @@ hr {
     content: '\2014 \0020'; }
 
 .social-sharing {
-  display: flex; }
+  display: flex;
+  justify-content: center;
+ }
   .template-password .social-sharing {
     justify-content: center; }
 
