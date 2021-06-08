@@ -3828,6 +3828,15 @@ hr {
       padding-left: 55px;
       min-width: 150px; } }
 
+/*================ PRODUCT PAGE ================*/
+.product-single__title {
+  text-align: center;
+}
+
+.single-option-selector {
+  border-right: 1px solid lightgray;
+}
+
 /*================ MODULES ================*/
 .site-header {
   background-color: #f2ebe6 }
@@ -7962,7 +7971,7 @@ hr {
     border-right: none;
   }
 
-  .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {
+  .input-group__btn .btn {
     border-left: none;
   }
 
