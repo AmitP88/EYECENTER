@@ -3861,6 +3861,16 @@ hr {
   }  
 }
 
+.product-form__item label {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.single-option-selector {
+  width: 200px;
+  margin: 0 auto;
+}
+
 .product-form__cart-submit {
   width: 300px;
   margin: 0 auto;
