@@ -8145,6 +8145,10 @@ hr {
     padding-right: 5%; 
   }
 
+  .site-header .medium-up--one-quarter {
+    width: 30%;
+  }
+
   .glasses_container {
     margin-top: 0;
   }
