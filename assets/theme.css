@@ -3841,11 +3841,7 @@ hr {
   border-right: 1px solid lightgray;
 }
 
-.product-template__container .grid {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10%;
-}
+
 
 .product-single__thumbnails {
   justify-content: center;
@@ -7867,6 +7863,12 @@ hr {
     overflow: auto;
   }
 
+
+  /* Product Page */
+  .product-template__container .grid {
+    display: block;
+  }
+
 }
 
 @media only screen and (min-width: 375px) {
@@ -8358,6 +8360,12 @@ hr {
     width: 50%;
   }
 
+  /* Product Page */
+  .product-template__container .grid {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10%;
+  }
 
 }
 
