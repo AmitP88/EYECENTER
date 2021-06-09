@@ -2880,7 +2880,9 @@ hr {
 
 .product-form__controls-group {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .product-form__controls-group--submit {
   margin-top: 0px; }
@@ -3832,19 +3834,16 @@ hr {
 .product-single__title {
   text-align: center;
   font-size: xx-large;
-  margin-left: 70px;
+  /* margin-left: 70px; */
 }
 
 .single-option-selector {
   border-right: 1px solid lightgray;
 }
 
-.product-template__container .grid__item:nth-child(2) {
-  display: flex;
-  justify-content: space-between;
-}
-
 .product-template__container .grid {
+  display: flex;
+  justify-content: center;
   margin-bottom: 10%;
 }
 
@@ -3859,6 +3858,24 @@ hr {
 #shopify-section-collection-template {
   margin-bottom: 10%;
 }
+
+@media only screen and (min-width: 750px) {
+  .medium-up--one-half {
+    width: 40%;
+  }  
+}
+
+.product-form__cart-submit {
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.shopify-payment-button {
+  width: 300px;
+  margin: 0 auto;
+}
+
 
 /*================ MODULES ================*/
 .site-header {
